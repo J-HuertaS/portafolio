@@ -1,0 +1,28 @@
+.switch {
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid var(--line-soft);
+  border-radius: 999px;
+  font-size: 12.5px;
+}
+.sm {
+  padding: 3px;
+  border-color: var(--line);
+}
+.option {
+  min-height: 28px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  color: var(--text-dim);
+  font-weight: 500;
+  text-decoration: none;
+}
+.option:hover {
+  color: var(--text);
+}
+.active {
+  background: var(--line);
+  color: var(--text);
+}
