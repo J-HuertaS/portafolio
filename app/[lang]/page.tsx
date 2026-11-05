@@ -101,11 +101,10 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
               <code>
                 <span className={s.kw}>const</span> juan = {'{'}
                 {'\n  '}role: <span className={s.str}>&quot;software engineer&quot;</span>,{'\n  '}based:{' '}
-                <span className={s.str}>&quot;bogotá&quot;</span>,{'\n  '}thinks_in: [
-                <span className={s.str}>&quot;quality attributes&quot;</span>, <span className={s.str}>&quot;trade-offs&quot;</span>],
-                {'\n  '}practice: [<span className={s.str}>&quot;design&quot;</span>, <span className={s.str}>&quot;prune&quot;</span>,{' '}
-                <span className={s.str}>&quot;wait&quot;</span>],{'\n  '}status: <span className={s.str}>&quot;open to work&quot;</span>,
-                {'\n'}
+                <span className={s.str}>&quot;bogotá&quot;</span>,{'\n  '}starts_from:{' '}
+                <span className={s.str}>&quot;the problem&quot;</span>,{'\n  '}practice: [<span className={s.str}>&quot;design&quot;</span>,{' '}
+                <span className={s.str}>&quot;prune&quot;</span>, <span className={s.str}>&quot;wait&quot;</span>],{'\n  '}status:{' '}
+                <span className={s.str}>&quot;open to work&quot;</span>,{'\n'}
                 {'};'}
               </code>
             </pre>

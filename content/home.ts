@@ -64,7 +64,7 @@ export const home: Record<Lang, HomeContent> = {
   es: {
     metaTitle: 'Juan Huertas — Ingeniero de Software',
     metaDescription:
-      'Ingeniero de Software en Bogotá. Diseño sistemas a partir de sus atributos de calidad y construyo Resva, un software de reservas para complejos deportivos.',
+      'Ingeniero de Software en Bogotá. Diseño sistemas a partir del problema y sus requisitos, y construyo Resva, un software de reservas para complejos deportivos.',
     nav: {
       home: 'Inicio',
       projects: 'Trabajo',
@@ -77,7 +77,7 @@ export const home: Record<Lang, HomeContent> = {
     tagline: 'Cultivo software.',
     heroKicker: 'LÁMINA 01 — JUNIPERUS REFACTORIS',
     heroLead:
-      'Ingeniero de Software en Bogotá, co-fundador y CTO de TaoTek. Empiezo por los atributos de calidad y los trade-offs; después le doy forma al sistema, lo podo y le doy tiempo para madurar, como a un bonsái.',
+      'Ingeniero de Software en Bogotá, co-fundador y CTO de TaoTek. Empiezo por el problema: lo vuelvo requisitos, diseño a partir de ellos y planteo escenarios de calidad que, al construir el sistema, se vuelven propiedades. Después lo podo y le doy tiempo para madurar, como a un bonsái.',
     seeWork: 'Ver el trabajo',
     present: 'hoy',
     plates: {
@@ -204,7 +204,7 @@ export const home: Record<Lang, HomeContent> = {
   en: {
     metaTitle: 'Juan Huertas — Software Engineer',
     metaDescription:
-      "Software engineer in Bogotá. I design systems from their quality attributes and I'm building Resva, a booking platform for sports venues.",
+      "Software engineer in Bogotá. I design systems from the problem and its requirements, and I'm building Resva, a booking platform for sports venues.",
     nav: {
       home: 'Home',
       projects: 'Work',
@@ -217,7 +217,7 @@ export const home: Record<Lang, HomeContent> = {
     tagline: 'I grow software.',
     heroKicker: 'PLATE 01 — JUNIPERUS REFACTORIS',
     heroLead:
-      'Software engineer in Bogotá, co-founder & CTO at TaoTek. I start from quality attributes and trade-offs, then shape and prune the system like a bonsai, and give it time to mature.',
+      'Software engineer in Bogotá, co-founder & CTO at TaoTek. I start from the problem: I turn it into requirements, design from them and set quality scenarios that become properties as the system is built. Then I prune it and give it time to mature, like a bonsai.',
     seeWork: 'See the work',
     present: 'now',
     plates: {
