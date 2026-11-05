@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element -- SVG pequeños de la marca (sello, rótulo de la postal) */
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -33,10 +34,9 @@ function Seal({ size, className }: { size: number; className?: string }) {
   )
 }
 
-function PlateHead({ kicker, title }: { kicker: string; title: string }) {
+function PlateHead({ title }: { title: string }) {
   return (
     <header className={s.plateHead}>
-      <span className={s.kicker}>{kicker}</span>
       <h2 className={s.plateTitle}>{title}</h2>
     </header>
   )
@@ -70,7 +70,7 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         </div>
       </div>
 
-      {/* LÁMINA 01 */}
+      {/* héroe */}
       <section className={s.hero}>
         <div className={s.heroArt}>
           <picture>
@@ -79,7 +79,6 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
           </picture>
         </div>
         <div className={s.heroText}>
-          <span className={s.kicker}>{t.heroKicker}</span>
           <div className={s.nameRow}>
             <h1 className={s.name}>
               Juan
@@ -123,24 +122,21 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         </div>
       </section>
 
-      {/* LÁMINA 02 */}
+      {/* trayectoria */}
       <section id="experiencia" className={s.plate}>
-        <PlateHead kicker={t.plates.experience} title={t.titles.experience} />
+        <PlateHead title={t.titles.experience} />
         <Experience t={t} />
       </section>
 
-      {/* LÁMINA 03 */}
+      {/* casos */}
       <section id="proyectos" className={s.plate}>
-        <PlateHead kicker={t.plates.projects} title={t.titles.projects} />
+        <PlateHead title={t.titles.projects} />
         <div className={s.cases}>
           {t.projects.map((p, i) => {
             const featured = i === 0
             return (
               <Link key={p.slug} href={caseHref(lang, p.slug)} className={cx('row', s.caseRow, featured && s.caseFeatured)}>
                 <div className={s.caseMain}>
-                  <span className={s.caseNo}>
-                    {t.caseFile} 00{i + 1}
-                  </span>
                   <h3 className={s.caseName}>{p.name}</h3>
                   <span className={s.caseMeta}>{p.meta}</span>
                 </div>
@@ -160,9 +156,9 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         </div>
       </section>
 
-      {/* LÁMINA 04 */}
+      {/* arquitectura */}
       <section id="arquitectura" className={s.plate}>
-        <PlateHead kicker={t.plates.architecture} title={t.titles.architecture} />
+        <PlateHead title={t.titles.architecture} />
         <div className={s.tree}>
           <div className={s.node}>
             <span className={s.nodeKey}>{a.craft.key}</span>
@@ -223,16 +219,39 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         <p className={s.fig}>{a.fig}</p>
       </section>
 
-      {/* LÁMINA 05 */}
+      {/* sobre mí */}
       <section id="sobre-mi" className={s.plate}>
-        <PlateHead kicker={t.plates.about} title={t.titles.about} />
+        <PlateHead title={t.titles.about} />
         <div className={s.aboutGrid}>
           <p className={s.aboutText}>{t.about}</p>
-          <figure className={s.photo}>
-            <div className={s.photoFrame}>
-              <Image src="/images/juan.jpg" alt={u.photoAlt} fill sizes="(max-width: 960px) 60vw, 300px" className={s.photoImg} />
+          {/* la foto como una postal japonesa (郵便はがき): casillas del código postal, estampilla con el sello y matasellos */}
+          <figure className={s.postcard}>
+            <img src="/brand/yubin-hagaki.svg" alt="" aria-hidden="true" className={s.pcLabel} width={26} height={145} />
+            <div className={s.pcHead} aria-hidden="true">
+              <ol className={s.zip}>
+                {Array.from({ length: 7 }, (_, i) => (
+                  <li key={i} className={i === 3 ? s.zipGap : undefined} />
+                ))}
+              </ol>
+              <div className={s.stamp}>
+                <img src="/brand/hatake.svg" alt="" width={40} height={40} />
+                <svg className={s.postmark} viewBox="0 0 92 48" aria-hidden="true">
+                  <circle cx="24" cy="24" r="21" />
+                  <circle cx="24" cy="24" r="16" />
+                  <text x="24" y="22.5" textAnchor="middle">
+                    BOGOTÁ
+                  </text>
+                  <text x="24" y="30" textAnchor="middle">
+                    2026
+                  </text>
+                  <path d="M48 14 q5 -3 10 0 t10 0 t10 0 t10 0 M48 24 q5 -3 10 0 t10 0 t10 0 t10 0 M48 34 q5 -3 10 0 t10 0 t10 0 t10 0" />
+                </svg>
+              </div>
             </div>
-            <figcaption>Juan Huertas · Bogotá</figcaption>
+            <div className={s.pcPhoto}>
+              <Image src="/images/juan.jpg" alt={u.photoAlt} fill sizes="(max-width: 960px) 70vw, 300px" className={s.photoImg} />
+            </div>
+            <figcaption className={s.pcCaption}>Juan Huertas · Bogotá</figcaption>
           </figure>
         </div>
         <h3 className={s.currentlyTitle}>{t.titles.currently}</h3>
@@ -247,9 +266,9 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         </ul>
       </section>
 
-      {/* LÁMINA 06 */}
+      {/* contacto */}
       <section id="contacto" className={s.plate}>
-        <PlateHead kicker={t.plates.contact} title={t.contactLead} />
+        <PlateHead title={t.contactLead} />
         <p className={s.contactSub}>{t.contactSub}</p>
         <div className={s.contactActions}>
           <CopyEmail variant="large" label={u.copyEmail} copiedLabel={u.copied} />

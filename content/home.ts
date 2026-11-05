@@ -27,13 +27,10 @@ export interface HomeContent {
   nav: { home: string; projects: string; experience: string; about: string; contact: string; architecture: string }
   role: string
   tagline: string
-  heroKicker: string
   heroLead: string
   seeWork: string
   present: string
-  plates: { experience: string; projects: string; architecture: string; about: string; contact: string }
   titles: { experience: string; projects: string; architecture: string; about: string; currently: string }
-  caseFile: string
   experience: {
     tao: { org: string; role: string; years: string; description: string }
     unal: { org: string; role: string; years: string }
@@ -75,18 +72,10 @@ export const home: Record<Lang, HomeContent> = {
     },
     role: 'Ingeniero de Software',
     tagline: 'Cultivo software.',
-    heroKicker: 'LÁMINA 01 — JUNIPERUS REFACTORIS',
     heroLead:
       'Ingeniero de Software en Bogotá, co-fundador y CTO de TaoTek. Empiezo por el problema: lo vuelvo requisitos, diseño a partir de ellos y planteo escenarios de calidad que, al construir el sistema, se vuelven propiedades. Después lo podo y le doy tiempo para madurar, como a un bonsái.',
     seeWork: 'Ver el trabajo',
     present: 'hoy',
-    plates: {
-      experience: 'LÁMINA 02 — TRAYECTORIA',
-      projects: 'LÁMINA 03 — CASOS DE CAMPO',
-      architecture: 'LÁMINA 04 — OFICIO Y RAÍCES',
-      about: 'LÁMINA 05 — SOBRE MÍ',
-      contact: 'LÁMINA 06 — CONTACTO',
-    },
     titles: {
       experience: 'Trayectoria,',
       projects: 'Casos de campo,',
@@ -94,7 +83,6 @@ export const home: Record<Lang, HomeContent> = {
       about: 'Sobre mí,',
       currently: 'Ahora mismo',
     },
-    caseFile: 'EXPEDIENTE Nº',
     experience: {
       tao: {
         org: 'TaoTek SAS',
@@ -214,18 +202,10 @@ export const home: Record<Lang, HomeContent> = {
     },
     role: 'Software Engineer',
     tagline: 'I grow software.',
-    heroKicker: 'PLATE 01 — JUNIPERUS REFACTORIS',
     heroLead:
       'Software engineer in Bogotá, co-founder & CTO at TaoTek. I start from the problem: I turn it into requirements, design from them and set quality scenarios that become properties as the system is built. Then I prune it and give it time to mature, like a bonsai.',
     seeWork: 'See the work',
     present: 'now',
-    plates: {
-      experience: 'PLATE 02 — PATH',
-      projects: 'PLATE 03 — FIELD CASES',
-      architecture: 'PLATE 04 — CRAFT & ROOTS',
-      about: 'PLATE 05 — ABOUT',
-      contact: 'PLATE 06 — CONTACT',
-    },
     titles: {
       experience: 'The path so far,',
       projects: 'Field cases,',
@@ -233,7 +213,6 @@ export const home: Record<Lang, HomeContent> = {
       about: 'About me,',
       currently: 'Currently',
     },
-    caseFile: 'CASE FILE Nº',
     experience: {
       tao: {
         org: 'TaoTek SAS',

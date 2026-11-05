@@ -8,7 +8,8 @@ import { useEffect, useRef } from 'react'
  * Cada movimiento se interpola en "toques" de pincel (gradiente radial, poca opacidad). Cada toque
  * vive ~2 s: mientras se seca se abre un poco y pierde pigmento, así que el trazo se disuelve en
  * el papel en vez de borrarse de golpe. Se redibuja en un canvas detrás del contenido y el bucle
- * se detiene solo cuando ya no queda pigmento. Se apaga con "reducir movimiento" y en pantallas táctiles.
+ * se detiene solo cuando ya no queda pigmento. En el celular sigue al dedo al deslizar (también
+ * mientras la página se desplaza). Se apaga con "reducir movimiento".
  */
 interface Dab {
   x: number
@@ -30,7 +31,6 @@ export function WatercolorTrail() {
     const canvas = ref.current
     if (!canvas) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    if (!window.matchMedia('(pointer: fine)').matches) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
@@ -80,9 +80,9 @@ export function WatercolorTrail() {
       if (!alive) ctx.clearRect(0, 0, innerWidth, innerHeight)
     }
 
-    function onMove(e: PointerEvent) {
+    function paintAt(clientX: number, clientY: number) {
       const now = performance.now()
-      const p = { x: e.clientX, y: e.clientY, t: now }
+      const p = { x: clientX, y: clientY, t: now }
       if (last && now - last.t < 120) {
         const dx = p.x - last.x
         const dy = p.y - last.y
@@ -109,10 +109,26 @@ export function WatercolorTrail() {
       if (!raf) raf = requestAnimationFrame(draw)
     }
 
-    window.addEventListener('pointermove', onMove, { passive: true })
+    // ratón y lápiz: pointermove; dedo: touchmove, que sigue llegando aunque la página se desplace
+    const onPointer = (e: PointerEvent) => {
+      if (e.pointerType !== 'touch') paintAt(e.clientX, e.clientY)
+    }
+    const onTouch = (e: TouchEvent) => {
+      const t = e.touches[0]
+      if (t) paintAt(t.clientX, t.clientY)
+    }
+    const onTouchEnd = () => {
+      last = null
+    }
+
+    window.addEventListener('pointermove', onPointer, { passive: true })
+    window.addEventListener('touchmove', onTouch, { passive: true })
+    window.addEventListener('touchend', onTouchEnd, { passive: true })
     window.addEventListener('resize', resize)
     return () => {
-      window.removeEventListener('pointermove', onMove)
+      window.removeEventListener('pointermove', onPointer)
+      window.removeEventListener('touchmove', onTouch)
+      window.removeEventListener('touchend', onTouchEnd)
       window.removeEventListener('resize', resize)
       cancelAnimationFrame(raf)
     }
