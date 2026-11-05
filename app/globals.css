@@ -1,18 +1,136 @@
+/*
+  Marca "Juan Huertas": papel, tinta sumi y un solo acento (rojo hanko).
+  Dos temas: Paper (claro, por defecto) y Sumi (oscuro), según la preferencia del sistema.
+  Tipografía: Instrument Serif para la voz, JetBrains Mono para los hechos.
+*/
 :root {
-  --bg: #0a0a0a;
-  --surface: #0f0f0f;
-  --surface-2: #101010;
-  --surface-3: #151515;
-  --text: #ededed;
-  --text-muted: #a1a1a1;
-  --text-dim: #8f8f8f;
-  --line: #262626;
-  --line-soft: #1f1f1f;
-  --line-faint: #1c1c1c;
-  --accent: #ff5b2e;
-  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  color-scheme: dark;
+  /* marca */
+  --paper: #ffffff;
+  --ink: #141414;
+  --ink-muted: #555555;
+  --hairline: #d6d2c8;
+  --wash: #9fb3c8;
+  --wash-deep: #6f879f;
+  --hanko: #b8312f;
+  --hanko-text: #b8312f;
+  --code-bg: #141414;
+  --code-fg: #f2efe8;
+  --code-muted: #a8a29a;
+  --surface: #faf9f6;
+  --surface-2: #f4f2ed;
+
+  /* nombres heredados que usan los casos de estudio */
+  --bg: var(--paper);
+  --surface-3: var(--surface-2);
+  --text: var(--ink);
+  --text-muted: var(--ink-muted);
+  --text-dim: #6a655d;
+  --text-soft: #2b2925;
+  --line: #d6d2c8;
+  --line-soft: #e4e0d6;
+  --line-faint: #ece9e2;
+  --accent: var(--hanko);
+
+  /*
+    Colores de los diagramas. Cada token lleva el nombre del gris que tenía el diseño
+    oscuro original; aquí se traduce a papel y tinta.
+  */
+  --c-0a0a0a: #ffffff;
+  --c-0d0d0d: #fbfaf7;
+  --c-0e0e0e: #fbfaf7;
+  --c-0f0f0f: #fbfaf7;
+  --c-101010: #f8f6f2;
+  --c-111111: #f6f4ef;
+  --c-121212: #f6f4ef;
+  --c-131313: #f4f2ed;
+  --c-141414: #f4f2ed;
+  --c-151515: #f2f0ea;
+  --c-1f1f1f: #e4e0d6;
+  --c-262626: #dcd8cd;
+  --c-2a2a2a: #d6d2c8;
+  --c-2e2e2e: #cfcabf;
+  --c-3a3a3a: #bdb8ac;
+  --c-4a4a4a: #a29d93;
+  --c-5a5a5a: #8a857b;
+  --c-6b6b6b: #6a655d;
+  --c-6f6f6f: #66615a;
+  --c-8f8f8f: #555555;
+  --c-a1a1a1: #4a4a4a;
+  --c-c9c9c9: #2b2925;
+  --c-d4d4d4: #222120;
+  --c-ededed: #141414;
+  --c-ff5b2e: #b8312f;
+  --c-d9a441: #3f5f7f;
+
+  --font-serif: var(--font-instrument), 'Iowan Old Style', Georgia, serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-sans: var(--font-mono);
+  --font-seal: var(--font-zen), serif;
+  --grid: 24px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141414;
+    --ink: #f2efe8;
+    --ink-muted: #a8a29a;
+    --hairline: #34312d;
+    --wash: #6f879f;
+    --wash-deep: #9fb3c8;
+    --hanko: #c9433f;
+    --hanko-text: #ff7a72;
+    --code-bg: #0b0b0b;
+    --surface: #191918;
+    --surface-2: #1e1d1b;
+    --text-dim: #8f8a82;
+    --text-soft: #d8d3c9;
+    --line: #34312d;
+    --line-soft: #2a2826;
+    --line-faint: #222120;
+
+    --c-0a0a0a: #141414;
+    --c-0d0d0d: #171716;
+    --c-0e0e0e: #171716;
+    --c-0f0f0f: #181817;
+    --c-101010: #191918;
+    --c-111111: #1a1a19;
+    --c-121212: #1b1b1a;
+    --c-131313: #1c1c1b;
+    --c-141414: #1c1c1b;
+    --c-151515: #1e1d1b;
+    --c-1f1f1f: #2a2826;
+    --c-262626: #302e2b;
+    --c-2a2a2a: #34312d;
+    --c-2e2e2e: #3a3733;
+    --c-3a3a3a: #46423d;
+    --c-4a4a4a: #57534d;
+    --c-5a5a5a: #67625b;
+    --c-6b6b6b: #7a756d;
+    --c-6f6f6f: #7e7971;
+    --c-8f8f8f: #a8a29a;
+    --c-a1a1a1: #b8b2a8;
+    --c-c9c9c9: #d8d3c9;
+    --c-d4d4d4: #e0dbd1;
+    --c-ededed: #f2efe8;
+    --c-ff5b2e: #ff7a72;
+    --c-d9a441: #9fb3c8;
+    color-scheme: dark;
+  }
+}
+
+/* Los diagramas usan atributos SVG con color fijo: CSS gana sobre los atributos de presentación. */
+[fill='#6B6B6B'] {
+  fill: var(--c-6b6b6b);
+}
+[fill='#D9A441'] {
+  fill: var(--c-d9a441);
+}
+[stroke='#0A0A0A'] {
+  stroke: var(--c-0a0a0a);
+}
+[stroke='#EDEDED'] {
+  stroke: var(--c-ededed);
 }
 
 * {
@@ -26,25 +144,32 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--bg);
-  background-image: radial-gradient(900px 520px at 18% -4%, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0) 70%);
-  background-repeat: no-repeat;
-  color: var(--text);
-  font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.65;
+  background-color: var(--paper);
+  /* la hoja del cuaderno de ingeniero: un punto cada 24 px */
+  background-image: radial-gradient(var(--hairline) 1px, transparent 1px);
+  background-size: var(--grid) var(--grid);
+  background-position: 11px 11px;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: var(--text);
+  color: var(--ink);
 }
 a:hover {
-  color: #ffffff;
+  color: var(--hanko-text);
+}
+
+::selection {
+  background: var(--wash);
+  color: var(--ink);
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--hanko-text);
   outline-offset: 2px;
 }
 

@@ -9,7 +9,7 @@ export function GitHubIcon({ size = 15 }: { size?: number }) {
   )
 }
 
-export function LinkedInIcon({ size = 15, cutout = '#101010' }: { size?: number; cutout?: string }) {
+export function LinkedInIcon({ size = 15, cutout = 'var(--paper)' }: { size?: number; cutout?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 16 16" aria-hidden="true" style={{ display: 'block', flex: `0 0 ${size}px` }}>
       <rect x="0.5" y="0.5" width="15" height="15" rx="2.5" fill="currentColor" />
@@ -23,7 +23,7 @@ export function LinkedInIcon({ size = 15, cutout = '#101010' }: { size?: number;
   )
 }
 
-export function ArrowIcon({ color = '#EDEDED', width = 1.6 }: { color?: string; width?: number }) {
+export function ArrowIcon({ color = 'currentColor', width = 1.6 }: { color?: string; width?: number }) {
   return (
     <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style={{ display: 'block' }}>
       <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" strokeLinejoin="round" />

@@ -5,7 +5,7 @@ export const figure1 = (
   <ResponsiveFigure
     desktop={
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        <div style={{ border: '1px solid #1F1F1F', borderRadius: '20px', background: '#0D0D0D', overflow: 'hidden' }}>
+        <div style={{ border: '1px solid var(--c-1f1f1f)', borderRadius: '0', background: 'var(--c-0d0d0d)', overflow: 'hidden' }}>
           <DiagramFit width={1200} height={740}>
             <div style={{ position: 'relative', width: '1200px', height: '740px', fontSize: '12.5px', lineHeight: '16px' }}>
               <div
@@ -16,9 +16,9 @@ export const figure1 = (
                   width: '888px',
                   height: '100px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '14px',
-                  background: '#121212',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
+                  background: 'var(--c-121212)',
                 }}
               ></div>
               <div
@@ -29,9 +29,9 @@ export const figure1 = (
                   width: '888px',
                   height: '100px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
               <div
@@ -42,9 +42,9 @@ export const figure1 = (
                   width: '888px',
                   height: '100px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
               <div
@@ -55,9 +55,9 @@ export const figure1 = (
                   width: '888px',
                   height: '180px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
               <div
@@ -68,18 +68,26 @@ export const figure1 = (
                   width: '888px',
                   height: '100px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
-              <div style={{ position: 'absolute', left: '164px', top: '46px', fontSize: '12px', color: '#A1A1A1' }}>Public network</div>
-              <div style={{ position: 'absolute', left: '164px', top: '166px', fontSize: '12px', color: '#8F8F8F' }}>Frontend network</div>
-              <div style={{ position: 'absolute', left: '164px', top: '285px', fontSize: '12px', color: '#8F8F8F' }}>
+              <div style={{ position: 'absolute', left: '164px', top: '46px', fontSize: '12px', color: 'var(--c-a1a1a1)' }}>
+                Public network
+              </div>
+              <div style={{ position: 'absolute', left: '164px', top: '166px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
+                Frontend network
+              </div>
+              <div style={{ position: 'absolute', left: '164px', top: '285px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
                 Orchestration network
               </div>
-              <div style={{ position: 'absolute', left: '164px', top: '406px', fontSize: '12px', color: '#8F8F8F' }}>Backend network</div>
-              <div style={{ position: 'absolute', left: '164px', top: '606px', fontSize: '12px', color: '#8F8F8F' }}>Data network</div>
+              <div style={{ position: 'absolute', left: '164px', top: '406px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
+                Backend network
+              </div>
+              <div style={{ position: 'absolute', left: '164px', top: '606px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
+                Data network
+              </div>
               <svg
                 width="71"
                 height="8"
@@ -93,7 +101,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -119,7 +127,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -145,7 +153,7 @@ export const figure1 = (
                   height: '67px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -171,7 +179,7 @@ export const figure1 = (
                   height: '67px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -197,7 +205,7 @@ export const figure1 = (
                   height: '187px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -223,7 +231,7 @@ export const figure1 = (
                   height: '73px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -249,7 +257,7 @@ export const figure1 = (
                   height: '73px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -275,7 +283,7 @@ export const figure1 = (
                   height: '73px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -301,7 +309,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -322,7 +330,7 @@ export const figure1 = (
                   height: '99px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -348,7 +356,7 @@ export const figure1 = (
                   height: '27px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -374,7 +382,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -400,7 +408,7 @@ export const figure1 = (
                   height: '54px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -422,7 +430,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -449,7 +457,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -471,7 +479,7 @@ export const figure1 = (
                   height: '53px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -498,7 +506,7 @@ export const figure1 = (
                   height: '141px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -519,7 +527,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -545,15 +553,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Browser</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>web user</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>web user</span>
                 </span>
               </div>
               <div
@@ -569,15 +577,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Android app</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Kotlin · local SQLite</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Kotlin · local SQLite</span>
                 </span>
               </div>
               <div
@@ -593,15 +601,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>auth + Firestore</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>auth + Firestore</span>
                 </span>
               </div>
               <div
@@ -617,15 +625,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Email</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>to the user</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>to the user</span>
                 </span>
               </div>
               <div
@@ -641,16 +649,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Web proxy + WAF</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>Nginx · TLS · per-IP limit</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>Nginx · TLS · per-IP limit</span>
                 </span>
               </div>
               <div
@@ -666,16 +674,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Mobile proxy</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>Nginx</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>Nginx</span>
                 </span>
               </div>
               <div
@@ -691,15 +699,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Web frontend ×3</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Next.js SSR</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Next.js SSR</span>
                 </span>
               </div>
               <div
@@ -715,15 +723,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>API Gateway</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Express Gateway · authentication and routing</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Express Gateway · authentication and routing</span>
                 </span>
               </div>
               <div
@@ -739,16 +747,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Load balancer</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>Nginx</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>Nginx</span>
                 </span>
               </div>
               <div
@@ -764,16 +772,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Authentication ×3</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>FastAPI</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>FastAPI</span>
                 </span>
               </div>
               <div
@@ -789,15 +797,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Routes</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Node.js</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Node.js</span>
                 </span>
               </div>
               <div
@@ -813,15 +821,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Distance</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>FastAPI · OSRM</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>FastAPI · OSRM</span>
                 </span>
               </div>
               <div
@@ -837,15 +845,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Notifications</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Spring Boot</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Spring Boot</span>
                 </span>
               </div>
               <div
@@ -861,15 +869,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>RabbitMQ</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>event queue</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>event queue</span>
                 </span>
               </div>
               <div
@@ -885,15 +893,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Routes</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>PostgreSQL + PostGIS</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>PostgreSQL + PostGIS</span>
                 </span>
               </div>
             </div>
@@ -906,7 +914,7 @@ export const figure1 = (
             justifyContent: 'space-between',
             gap: '10px 24px',
             fontSize: '14px',
-            color: '#8F8F8F',
+            color: 'var(--c-8f8f8f)',
           }}
         >
           <span>Fig. 1 — Components and connectors, grouped by network. Highlighted: what I built.</span>
@@ -917,7 +925,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#6B6B6B', strokeWidth: '2' }}
+                style={{ fill: 'none', stroke: 'var(--c-6b6b6b)', strokeWidth: '2' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -929,7 +937,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#D9A441', strokeWidth: '2', strokeDasharray: '6 5' }}
+                style={{ fill: 'none', stroke: 'var(--c-d9a441)', strokeWidth: '2', strokeDasharray: '6 5' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -941,7 +949,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#5A5A5A', strokeWidth: '1.5', strokeDasharray: '2 4' }}
+                style={{ fill: 'none', stroke: 'var(--c-5a5a5a)', strokeWidth: '1.5', strokeDasharray: '2 4' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -955,9 +963,9 @@ export const figure1 = (
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div
           style={{
-            border: '1px solid #1F1F1F',
-            borderRadius: '16px',
-            background: '#0D0D0D',
+            border: '1px solid var(--c-1f1f1f)',
+            borderRadius: '0',
+            background: 'var(--c-0d0d0d)',
             padding: '12px',
             display: 'flex',
             flexDirection: 'column',
@@ -967,22 +975,22 @@ export const figure1 = (
         >
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Clients</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Clients</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -995,14 +1003,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Browser</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>web user</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>web user</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1015,338 +1023,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Android app</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Kotlin · local SQLite</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
-            <svg
-              width="8"
-              height="30"
-              viewBox="0 0 8 30"
-              aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
-            >
-              <defs>
-                <marker id="dc-arrow-head-filled-307" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
-                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
-                </marker>
-              </defs>
-              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-307)" />
-            </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>HTTP / REST</span>
-          </div>
-          <div
-            style={{
-              border: '1px dashed #3A3A3A',
-              borderRadius: '14px',
-              background: '#121212',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px',
-            }}
-          >
-            <span style={{ fontSize: '12px', color: '#A1A1A1' }}>Public network</span>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
-              <div
-                style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Web proxy + WAF</b>
-                  <br />
-                  <span style={{ color: '#4A4A4A' }}>Nginx · TLS · per-IP limit</span>
-                </span>
-              </div>
-              <div
-                style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Mobile proxy</b>
-                  <br />
-                  <span style={{ color: '#4A4A4A' }}>Nginx</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
-            <svg
-              width="8"
-              height="30"
-              viewBox="0 0 8 30"
-              aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
-            >
-              <defs>
-                <marker id="dc-arrow-head-filled-308" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
-                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
-                </marker>
-              </defs>
-              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-308)" />
-            </svg>
-          </div>
-          <div
-            style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px',
-            }}
-          >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Frontend network</span>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
-              <div
-                style={{
-                  gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Web frontend ×3</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>Next.js SSR</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
-            <svg
-              width="8"
-              height="30"
-              viewBox="0 0 8 30"
-              aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
-            >
-              <defs>
-                <marker id="dc-arrow-head-filled-309" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
-                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
-                </marker>
-              </defs>
-              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-309)" />
-            </svg>
-          </div>
-          <div
-            style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px',
-            }}
-          >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Orchestration network</span>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
-              <div
-                style={{
-                  gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>API Gateway</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>Express Gateway · authentication and routing</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
-            <svg
-              width="8"
-              height="30"
-              viewBox="0 0 8 30"
-              aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
-            >
-              <defs>
-                <marker id="dc-arrow-head-filled-310" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
-                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
-                </marker>
-              </defs>
-              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-310)" />
-            </svg>
-          </div>
-          <div
-            style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px',
-            }}
-          >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Backend network</span>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
-              <div
-                style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Load balancer</b>
-                  <br />
-                  <span style={{ color: '#4A4A4A' }}>Nginx</span>
-                </span>
-              </div>
-              <div
-                style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Authentication ×3</b>
-                  <br />
-                  <span style={{ color: '#4A4A4A' }}>FastAPI</span>
-                </span>
-              </div>
-              <div
-                style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Routes</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>Node.js</span>
-                </span>
-              </div>
-              <div
-                style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Distance</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>FastAPI · OSRM</span>
-                </span>
-              </div>
-              <div
-                style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>RabbitMQ</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>event queue</span>
-                </span>
-              </div>
-              <div
-                style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Notifications</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>Spring Boot</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Kotlin · local SQLite</span>
                 </span>
               </div>
             </div>
@@ -1361,7 +1038,366 @@ export const figure1 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#5A5A5A',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
+            >
+              <defs>
+                <marker id="dc-arrow-head-filled-307" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
+                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
+                </marker>
+              </defs>
+              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-307)" />
+            </svg>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>HTTP / REST</span>
+          </div>
+          <div
+            style={{
+              border: '1px dashed var(--c-3a3a3a)',
+              borderRadius: '0',
+              background: 'var(--c-121212)',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <span style={{ fontSize: '12px', color: 'var(--c-a1a1a1)' }}>Public network</span>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
+              <div
+                style={{
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Web proxy + WAF</b>
+                  <br />
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>Nginx · TLS · per-IP limit</span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Mobile proxy</b>
+                  <br />
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>Nginx</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
+            <svg
+              width="8"
+              height="30"
+              viewBox="0 0 8 30"
+              aria-hidden="true"
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
+            >
+              <defs>
+                <marker id="dc-arrow-head-filled-308" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
+                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
+                </marker>
+              </defs>
+              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-308)" />
+            </svg>
+          </div>
+          <div
+            style={{
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Frontend network</span>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
+              <div
+                style={{
+                  gridColumn: '1 / -1',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Web frontend ×3</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Next.js SSR</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
+            <svg
+              width="8"
+              height="30"
+              viewBox="0 0 8 30"
+              aria-hidden="true"
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
+            >
+              <defs>
+                <marker id="dc-arrow-head-filled-309" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
+                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
+                </marker>
+              </defs>
+              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-309)" />
+            </svg>
+          </div>
+          <div
+            style={{
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Orchestration network</span>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
+              <div
+                style={{
+                  gridColumn: '1 / -1',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>API Gateway</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Express Gateway · authentication and routing</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
+            <svg
+              width="8"
+              height="30"
+              viewBox="0 0 8 30"
+              aria-hidden="true"
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
+            >
+              <defs>
+                <marker id="dc-arrow-head-filled-310" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
+                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
+                </marker>
+              </defs>
+              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-310)" />
+            </svg>
+          </div>
+          <div
+            style={{
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Backend network</span>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
+              <div
+                style={{
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Load balancer</b>
+                  <br />
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>Nginx</span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Authentication ×3</b>
+                  <br />
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>FastAPI</span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Routes</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Node.js</span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Distance</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>FastAPI · OSRM</span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>RabbitMQ</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>event queue</span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Notifications</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Spring Boot</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
+            <svg
+              width="8"
+              height="30"
+              viewBox="0 0 8 30"
+              aria-hidden="true"
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-5a5a5a)',
                 strokeWidth: '1.5',
                 strokeLinecap: 'round',
                 strokeDasharray: '2 4',
@@ -1369,26 +1405,26 @@ export const figure1 = (
             >
               <path d="M 4 0 L 4 26" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>data access</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>data access</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Data network</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Data network</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1402,7 +1438,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Routes</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>PostgreSQL + PostGIS</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>PostgreSQL + PostGIS</span>
                 </span>
               </div>
             </div>
@@ -1410,22 +1446,22 @@ export const figure1 = (
           <div style={{ height: '14px' }}></div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>External services</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>External services</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1438,14 +1474,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>auth + Firestore</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>auth + Firestore</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1458,13 +1494,13 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Email</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>to the user</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>to the user</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           <span>Fig. 1 — Components grouped by network. Highlighted: what I built.</span>
           <span style={{ display: 'flex', flexWrap: 'wrap', gap: '6px 16px', fontSize: '13px' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
@@ -1473,7 +1509,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#6B6B6B', strokeWidth: '2' }}
+                style={{ fill: 'none', stroke: 'var(--c-6b6b6b)', strokeWidth: '2' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
@@ -1485,7 +1521,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#D9A441', strokeWidth: '2', strokeDasharray: '6 5' }}
+                style={{ fill: 'none', stroke: 'var(--c-d9a441)', strokeWidth: '2', strokeDasharray: '6 5' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
@@ -1497,14 +1533,14 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#5A5A5A', strokeWidth: '1.5', strokeDasharray: '2 4' }}
+                style={{ fill: 'none', stroke: 'var(--c-5a5a5a)', strokeWidth: '1.5', strokeDasharray: '2 4' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
               data access
             </span>
           </span>
-          <span style={{ fontSize: '13px', color: '#6F6F6F' }}>Compact version: larger screens show every connector.</span>
+          <span style={{ fontSize: '13px', color: 'var(--c-6f6f6f)' }}>Compact version: larger screens show every connector.</span>
         </figcaption>
       </figure>
     }

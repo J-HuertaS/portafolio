@@ -45,9 +45,11 @@ export function CopyEmail({ variant, label, copiedLabel }: { variant: 'small' | 
         {copied ? copiedLabel : site.email}
       </span>
       {large ? (
-        <span className={s.copyBadge}>{copied ? <CheckIcon size={16} stroke="#0A0A0A" /> : <CopyIcon size={16} stroke="#0A0A0A" />}</span>
+        <span className={s.copyBadge}>
+          {copied ? <CheckIcon size={16} stroke="var(--paper)" /> : <CopyIcon size={16} stroke="var(--paper)" />}
+        </span>
       ) : copied ? (
-        <CheckIcon size={13} stroke="#EDEDED" />
+        <CheckIcon size={13} stroke="currentColor" />
       ) : (
         <CopyIcon size={13} stroke="currentColor" />
       )}

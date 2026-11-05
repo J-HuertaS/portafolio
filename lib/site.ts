@@ -1,8 +1,10 @@
 import type { Lang } from './i18n'
 
 export const site = {
-  name: 'Juan Esteban Cárdenas Huertas',
-  shortName: 'Juan Esteban Cárdenas',
+  name: 'Juan Huertas',
+  /** Nombre legal completo, para la hoja de vida y los metadatos. */
+  legalName: 'Juan Esteban Cárdenas Huertas',
+  shortName: 'Juan Huertas',
   email: 'juan.cardenas.huertas@gmail.com',
   github: 'https://github.com/J-HuertaS',
   linkedin: 'https://www.linkedin.com/in/juan-huertaszz',

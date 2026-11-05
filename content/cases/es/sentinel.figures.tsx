@@ -5,7 +5,7 @@ export const figure1 = (
   <ResponsiveFigure
     desktop={
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        <div style={{ border: '1px solid #1F1F1F', borderRadius: '20px', background: '#0D0D0D', overflow: 'hidden' }}>
+        <div style={{ border: '1px solid var(--c-1f1f1f)', borderRadius: '0', background: 'var(--c-0d0d0d)', overflow: 'hidden' }}>
           <DiagramFit width={1200} height={784}>
             <div style={{ position: 'relative', width: '1200px', height: '784px', fontSize: '12.5px', lineHeight: '16px' }}>
               <div
@@ -16,9 +16,9 @@ export const figure1 = (
                   width: '888px',
                   height: '110px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
               <div
@@ -29,9 +29,9 @@ export const figure1 = (
                   width: '888px',
                   height: '104px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
               <div
@@ -42,9 +42,9 @@ export const figure1 = (
                   width: '888px',
                   height: '104px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
               <div
@@ -55,15 +55,19 @@ export const figure1 = (
                   width: '888px',
                   height: '224px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
-              <div style={{ position: 'absolute', left: '164px', top: '46px', fontSize: '12px', color: '#8F8F8F' }}>Presentación</div>
-              <div style={{ position: 'absolute', left: '164px', top: '202px', fontSize: '12px', color: '#8F8F8F' }}>Comunicación</div>
-              <div style={{ position: 'absolute', left: '164px', top: '380px', fontSize: '12px', color: '#8F8F8F' }}>Lógica</div>
-              <div style={{ position: 'absolute', left: '164px', top: '526px', fontSize: '12px', color: '#8F8F8F' }}>Datos</div>
+              <div style={{ position: 'absolute', left: '164px', top: '46px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
+                Presentación
+              </div>
+              <div style={{ position: 'absolute', left: '164px', top: '202px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
+                Comunicación
+              </div>
+              <div style={{ position: 'absolute', left: '164px', top: '380px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Lógica</div>
+              <div style={{ position: 'absolute', left: '164px', top: '526px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Datos</div>
               <svg
                 width="23"
                 height="8"
@@ -77,7 +81,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -103,7 +107,7 @@ export const figure1 = (
                   height: '132px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -124,7 +128,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -150,7 +154,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -176,7 +180,7 @@ export const figure1 = (
                   height: '99px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -202,7 +206,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -228,7 +232,7 @@ export const figure1 = (
                   height: '109px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -254,7 +258,7 @@ export const figure1 = (
                   height: '109px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -280,7 +284,7 @@ export const figure1 = (
                   height: '109px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -306,7 +310,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -327,7 +331,7 @@ export const figure1 = (
                   height: '59px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -353,7 +357,7 @@ export const figure1 = (
                   height: '59px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -379,7 +383,7 @@ export const figure1 = (
                   height: '59px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -405,7 +409,7 @@ export const figure1 = (
                   height: '109px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -432,7 +436,7 @@ export const figure1 = (
                   height: '90px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -454,7 +458,7 @@ export const figure1 = (
                   height: '90px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -476,7 +480,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -498,7 +502,7 @@ export const figure1 = (
                   height: '19px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -524,7 +528,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -550,7 +554,7 @@ export const figure1 = (
                   height: '128px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -571,7 +575,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -597,7 +601,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -623,7 +627,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -649,7 +653,7 @@ export const figure1 = (
                   height: '377px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -670,7 +674,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -691,7 +695,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -712,7 +716,7 @@ export const figure1 = (
                   height: '81px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -733,7 +737,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -754,7 +758,7 @@ export const figure1 = (
                   height: '27px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -775,7 +779,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -796,7 +800,7 @@ export const figure1 = (
                   height: '152px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -817,7 +821,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -838,7 +842,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -859,7 +863,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -880,7 +884,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -901,7 +905,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -922,15 +926,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase Auth</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>identidad</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>identidad</span>
                 </span>
               </div>
               <div
@@ -947,15 +951,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>API de escaneo</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>saneamiento</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>saneamiento</span>
                 </span>
               </div>
               <div
@@ -971,15 +975,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>App Insights</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>observa todo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>observa todo</span>
                 </span>
               </div>
               <div
@@ -995,15 +999,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>App móvil</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Android</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Android</span>
                 </span>
               </div>
               <div
@@ -1019,15 +1023,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Proxy inverso</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>APIM</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>APIM</span>
                 </span>
               </div>
               <div
@@ -1043,15 +1047,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>API Gateway</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure API Management · valida JWT · publica eventos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure API Management · valida JWT · publica eventos</span>
                 </span>
               </div>
               <div
@@ -1067,15 +1071,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Event Grid</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>enrutador de eventos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>enrutador de eventos</span>
                 </span>
               </div>
               <div
@@ -1091,15 +1095,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Service Bus</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>cola de notificaciones</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>cola de notificaciones</span>
                 </span>
               </div>
               <div
@@ -1116,15 +1120,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px dashed #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Saneamiento</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure Function</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure Function</span>
                 </span>
               </div>
               <div
@@ -1141,15 +1145,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px dashed #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Evidencias</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
@@ -1165,15 +1169,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Robos</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
@@ -1189,15 +1193,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Datos personales</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
@@ -1213,15 +1217,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Geolocalización</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
@@ -1237,16 +1241,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Notificaciones</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>mi servicio</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>mi servicio</span>
                 </span>
               </div>
               <div
@@ -1263,15 +1267,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px dashed #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px dashed var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Cuarentena</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Blob Storage</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Blob Storage</span>
                 </span>
               </div>
               <div
@@ -1288,15 +1292,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px dashed #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px dashed var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Evidencias</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Blob Storage</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Blob Storage</span>
                 </span>
               </div>
               <div
@@ -1312,15 +1316,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Robos</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure SQL</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure SQL</span>
                 </span>
               </div>
               <div
@@ -1336,15 +1340,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Personas</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure SQL</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure SQL</span>
                 </span>
               </div>
               <div
@@ -1360,15 +1364,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Ubicaciones</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Redis GEO</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Redis GEO</span>
                 </span>
               </div>
               <div
@@ -1384,15 +1388,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Dispositivos</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure SQL</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure SQL</span>
                 </span>
               </div>
               <div
@@ -1409,15 +1413,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px dashed #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px dashed var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Métricas</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Redis</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Redis</span>
                 </span>
               </div>
               <div
@@ -1433,9 +1437,9 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
@@ -1456,9 +1460,9 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
@@ -1478,15 +1482,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>SMS</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>fuera del prototipo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>fuera del prototipo</span>
                 </span>
               </div>
               <div
@@ -1498,7 +1502,7 @@ export const figure1 = (
                   textAlign: 'center',
                   fontSize: '12px',
                   lineHeight: '16px',
-                  color: '#8F8F8F',
+                  color: 'var(--c-8f8f8f)',
                 }}
               >
                 eventos
@@ -1513,7 +1517,7 @@ export const figure1 = (
             justifyContent: 'space-between',
             gap: '10px 24px',
             fontSize: '14px',
-            color: '#8F8F8F',
+            color: 'var(--c-8f8f8f)',
           }}
         >
           <span>
@@ -1526,7 +1530,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#6B6B6B', strokeWidth: '2' }}
+                style={{ fill: 'none', stroke: 'var(--c-6b6b6b)', strokeWidth: '2' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -1538,7 +1542,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#D9A441', strokeWidth: '2', strokeDasharray: '6 5' }}
+                style={{ fill: 'none', stroke: 'var(--c-d9a441)', strokeWidth: '2', strokeDasharray: '6 5' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -1550,7 +1554,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#5A5A5A', strokeWidth: '1.5', strokeDasharray: '2 4' }}
+                style={{ fill: 'none', stroke: 'var(--c-5a5a5a)', strokeWidth: '1.5', strokeDasharray: '2 4' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -1564,9 +1568,9 @@ export const figure1 = (
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div
           style={{
-            border: '1px solid #1F1F1F',
-            borderRadius: '16px',
-            background: '#0D0D0D',
+            border: '1px solid var(--c-1f1f1f)',
+            borderRadius: '0',
+            background: 'var(--c-0d0d0d)',
             padding: '12px',
             display: 'flex',
             flexDirection: 'column',
@@ -1576,23 +1580,23 @@ export const figure1 = (
         >
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Presentación</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Presentación</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1605,7 +1609,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>App móvil</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Android</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Android</span>
                 </span>
               </div>
             </div>
@@ -1616,7 +1620,14 @@ export const figure1 = (
               height="30"
               viewBox="0 0 8 30"
               aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
             >
               <defs>
                 <marker id="dc-arrow-head-filled-312" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
@@ -1625,27 +1636,27 @@ export const figure1 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-312)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>REST / HTTPS</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>REST / HTTPS</span>
           </div>
           <div
             style={{
-              border: '1px dashed #3A3A3A',
-              borderRadius: '14px',
-              background: '#121212',
+              border: '1px dashed var(--c-3a3a3a)',
+              borderRadius: '0',
+              background: 'var(--c-121212)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#A1A1A1' }}>Comunicación</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-a1a1a1)' }}>Comunicación</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1658,14 +1669,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>API Gateway</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure API Management · valida JWT · publica eventos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure API Management · valida JWT · publica eventos</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1678,14 +1689,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Event Grid</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>enrutador de eventos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>enrutador de eventos</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1698,7 +1709,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Service Bus</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>cola de notificaciones</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>cola de notificaciones</span>
                 </span>
               </div>
             </div>
@@ -1713,7 +1724,7 @@ export const figure1 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -1726,26 +1737,26 @@ export const figure1 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-313)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#D9A441' }}>eventos</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-d9a441)' }}>eventos</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Lógica</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Lógica</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1758,14 +1769,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Robos</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1778,14 +1789,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Datos personales</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1798,15 +1809,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Geolocalización</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1819,15 +1830,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Notificaciones</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>mi servicio</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>mi servicio</span>
                 </span>
               </div>
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#151515',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1840,15 +1851,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Evidencias</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>microservicio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>microservicio</span>
                 </span>
               </div>
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#151515',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1861,7 +1872,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Saneamiento</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure Function</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure Function</span>
                 </span>
               </div>
             </div>
@@ -1876,7 +1887,7 @@ export const figure1 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#5A5A5A',
+                stroke: 'var(--c-5a5a5a)',
                 strokeWidth: '1.5',
                 strokeLinecap: 'round',
                 strokeDasharray: '2 4',
@@ -1884,25 +1895,25 @@ export const figure1 = (
             >
               <path d="M 4 0 L 4 26" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>acceso a datos</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>acceso a datos</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Datos</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Datos</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1916,13 +1927,13 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Robos</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure SQL</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure SQL</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1936,13 +1947,13 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Personas</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure SQL</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure SQL</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1956,13 +1967,13 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Ubicaciones</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Redis GEO</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Redis GEO</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1976,14 +1987,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Dispositivos</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure SQL</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure SQL</span>
                 </span>
               </div>
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#111111',
-                  border: '1px dashed #3A3A3A',
+                  background: 'var(--c-111111)',
+                  border: '1px dashed var(--c-3a3a3a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1997,14 +2008,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Evidencias</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Blob Storage</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Blob Storage</span>
                 </span>
               </div>
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#111111',
-                  border: '1px dashed #3A3A3A',
+                  background: 'var(--c-111111)',
+                  border: '1px dashed var(--c-3a3a3a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -2018,15 +2029,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Cuarentena</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Blob Storage</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Blob Storage</span>
                 </span>
               </div>
               <div
                 style={{
                   gridColumn: '1 / -1',
                   opacity: '0.5',
-                  background: '#111111',
-                  border: '1px dashed #3A3A3A',
+                  background: 'var(--c-111111)',
+                  border: '1px dashed var(--c-3a3a3a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -2040,7 +2051,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Métricas</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Redis</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Redis</span>
                 </span>
               </div>
             </div>
@@ -2048,22 +2059,22 @@ export const figure1 = (
           <div style={{ height: '14px' }}></div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Servicios externos</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Servicios externos</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2076,14 +2087,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase Auth</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>identidad</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>identidad</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2096,14 +2107,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase FCM</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>push al celular</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>push al celular</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2116,15 +2127,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>App Insights</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>observa todo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>observa todo</span>
                 </span>
               </div>
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#151515',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2137,15 +2148,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>API de escaneo</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>saneamiento</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>saneamiento</span>
                 </span>
               </div>
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#151515',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2162,9 +2173,9 @@ export const figure1 = (
               <div
                 style={{
                   opacity: '0.5',
-                  background: '#151515',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2177,13 +2188,13 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>SMS</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>fuera del prototipo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>fuera del prototipo</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           <span>Fig. 1 — Componentes por capa, que diseñamos en equipo. Atenuado y punteado, lo que quedó solo en el diseño.</span>
           <span style={{ display: 'flex', flexWrap: 'wrap', gap: '6px 16px', fontSize: '13px' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
@@ -2192,7 +2203,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#6B6B6B', strokeWidth: '2' }}
+                style={{ fill: 'none', stroke: 'var(--c-6b6b6b)', strokeWidth: '2' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
@@ -2204,7 +2215,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#D9A441', strokeWidth: '2', strokeDasharray: '6 5' }}
+                style={{ fill: 'none', stroke: 'var(--c-d9a441)', strokeWidth: '2', strokeDasharray: '6 5' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
@@ -2216,14 +2227,16 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#5A5A5A', strokeWidth: '1.5', strokeDasharray: '2 4' }}
+                style={{ fill: 'none', stroke: 'var(--c-5a5a5a)', strokeWidth: '1.5', strokeDasharray: '2 4' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
               acceso a datos
             </span>
           </span>
-          <span style={{ fontSize: '13px', color: '#6F6F6F' }}>Versión compacta: en pantallas grandes se ven todos los conectores.</span>
+          <span style={{ fontSize: '13px', color: 'var(--c-6f6f6f)' }}>
+            Versión compacta: en pantallas grandes se ven todos los conectores.
+          </span>
         </figcaption>
       </figure>
     }
@@ -2234,7 +2247,7 @@ export const figure2 = (
   <ResponsiveFigure
     desktop={
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        <div style={{ border: '1px solid #1F1F1F', borderRadius: '20px', background: '#0D0D0D', overflow: 'hidden' }}>
+        <div style={{ border: '1px solid var(--c-1f1f1f)', borderRadius: '0', background: 'var(--c-0d0d0d)', overflow: 'hidden' }}>
           <DiagramFit width={1240} height={416}>
             <div style={{ position: 'relative', width: '1240px', height: '416px', fontSize: '13px', lineHeight: '18px' }}>
               <svg
@@ -2250,7 +2263,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2276,7 +2289,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2302,7 +2315,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2328,7 +2341,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2354,7 +2367,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2380,7 +2393,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2406,7 +2419,7 @@ export const figure2 = (
                   height: '79px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2432,7 +2445,7 @@ export const figure2 = (
                   height: '48px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2454,7 +2467,7 @@ export const figure2 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2476,7 +2489,7 @@ export const figure2 = (
                   height: '47px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -2503,15 +2516,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>App móvil</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Android</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Android</span>
                 </span>
               </div>
               <div
@@ -2527,15 +2540,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>API Gateway</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure APIM</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure APIM</span>
                 </span>
               </div>
               <div
@@ -2551,15 +2564,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Event Grid</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>eventos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>eventos</span>
                 </span>
               </div>
               <div
@@ -2575,15 +2588,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Geolocalización</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Redis GEO</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Redis GEO</span>
                 </span>
               </div>
               <div
@@ -2599,15 +2612,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Service Bus</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>cola de mensajes</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>cola de mensajes</span>
                 </span>
               </div>
               <div
@@ -2623,16 +2636,16 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '12px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Notificaciones</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>mi servicio</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>mi servicio</span>
                 </span>
               </div>
               <div
@@ -2648,15 +2661,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase FCM</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>push al celular</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>push al celular</span>
                 </span>
               </div>
               <div
@@ -2672,15 +2685,15 @@ export const figure2 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#141414',
-                  border: '1px solid #2A2A2A',
-                  borderRadius: '12px',
+                  background: 'var(--c-141414)',
+                  border: '1px solid var(--c-2a2a2a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Azure SQL</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>un FID por usuario</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>un FID por usuario</span>
                 </span>
               </div>
               <div
@@ -2692,7 +2705,7 @@ export const figure2 = (
                   textAlign: 'center',
                   fontSize: '12.5px',
                   lineHeight: '16px',
-                  color: '#8F8F8F',
+                  color: 'var(--c-8f8f8f)',
                 }}
               >
                 registro y rotación del FID
@@ -2700,7 +2713,7 @@ export const figure2 = (
             </div>
           </DiagramFit>
         </div>
-        <figcaption style={{ fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           Fig. 2 — El camino de una alerta, desde que alguien reporta un robo hasta que suena el celular de quienes están cerca. Mi
           servicio, resaltado.
         </figcaption>
@@ -2710,9 +2723,9 @@ export const figure2 = (
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div
           style={{
-            border: '1px solid #1F1F1F',
-            borderRadius: '16px',
-            background: '#0D0D0D',
+            border: '1px solid var(--c-1f1f1f)',
+            borderRadius: '0',
+            background: 'var(--c-0d0d0d)',
             padding: '12px',
             display: 'flex',
             flexDirection: 'column',
@@ -2722,9 +2735,9 @@ export const figure2 = (
         >
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -2735,9 +2748,9 @@ export const figure2 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2750,109 +2763,7 @@ export const figure2 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>App móvil</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Android</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
-            <svg
-              width="8"
-              height="30"
-              viewBox="0 0 8 30"
-              aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
-            >
-              <defs>
-                <marker id="dc-arrow-head-filled-315" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
-                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
-                </marker>
-              </defs>
-              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-315)" />
-            </svg>
-          </div>
-          <div
-            style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px',
-            }}
-          >
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
-              <div
-                style={{
-                  gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>API Gateway</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>Azure APIM</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
-            <svg
-              width="8"
-              height="30"
-              viewBox="0 0 8 30"
-              aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
-            >
-              <defs>
-                <marker id="dc-arrow-head-filled-316" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
-                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
-                </marker>
-              </defs>
-              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-316)" />
-            </svg>
-          </div>
-          <div
-            style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px',
-            }}
-          >
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
-              <div
-                style={{
-                  gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
-                  minHeight: '52px',
-                  boxSizing: 'border-box',
-                  padding: '8px 10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <span>
-                  <b style={{ fontWeight: '600' }}>Event Grid</b>
-                  <br />
-                  <span style={{ color: '#8F8F8F' }}>eventos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Android</span>
                 </span>
               </div>
             </div>
@@ -2867,7 +2778,123 @@ export const figure2 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
+            >
+              <defs>
+                <marker id="dc-arrow-head-filled-315" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
+                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
+                </marker>
+              </defs>
+              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-315)" />
+            </svg>
+          </div>
+          <div
+            style={{
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
+              <div
+                style={{
+                  gridColumn: '1 / -1',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>API Gateway</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Azure APIM</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
+            <svg
+              width="8"
+              height="30"
+              viewBox="0 0 8 30"
+              aria-hidden="true"
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
+            >
+              <defs>
+                <marker id="dc-arrow-head-filled-316" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
+                  <path d="M0 0 L4 2 L0 4 Z" fill="#6B6B6B" stroke="none" style={{ stroke: 'none', fill: 'context-stroke' }} />
+                </marker>
+              </defs>
+              <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-316)" />
+            </svg>
+          </div>
+          <div
+            style={{
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
+              <div
+                style={{
+                  gridColumn: '1 / -1',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
+                  minHeight: '52px',
+                  boxSizing: 'border-box',
+                  padding: '8px 10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                }}
+              >
+                <span>
+                  <b style={{ fontWeight: '600' }}>Event Grid</b>
+                  <br />
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>eventos</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minHeight: '34px', paddingLeft: '24px' }}>
+            <svg
+              width="8"
+              height="30"
+              viewBox="0 0 8 30"
+              aria-hidden="true"
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -2883,9 +2910,9 @@ export const figure2 = (
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -2896,9 +2923,9 @@ export const figure2 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2911,7 +2938,7 @@ export const figure2 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Geolocalización</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>Redis GEO</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>Redis GEO</span>
                 </span>
               </div>
             </div>
@@ -2926,7 +2953,7 @@ export const figure2 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -2942,9 +2969,9 @@ export const figure2 = (
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -2955,9 +2982,9 @@ export const figure2 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -2970,7 +2997,7 @@ export const figure2 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Service Bus</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>cola de mensajes</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>cola de mensajes</span>
                 </span>
               </div>
             </div>
@@ -2985,7 +3012,7 @@ export const figure2 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -3001,9 +3028,9 @@ export const figure2 = (
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -3013,10 +3040,10 @@ export const figure2 = (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -3029,13 +3056,13 @@ export const figure2 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Notificaciones</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>mi servicio</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>mi servicio</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -3049,7 +3076,7 @@ export const figure2 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Azure SQL</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>un FID por usuario</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>un FID por usuario</span>
                 </span>
               </div>
             </div>
@@ -3060,7 +3087,14 @@ export const figure2 = (
               height="30"
               viewBox="0 0 8 30"
               aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
             >
               <defs>
                 <marker id="dc-arrow-head-filled-320" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
@@ -3072,9 +3106,9 @@ export const figure2 = (
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -3085,9 +3119,9 @@ export const figure2 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -3100,13 +3134,13 @@ export const figure2 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Firebase FCM</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>push al celular</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>push al celular</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           <span>
             Fig. 2 — El camino de una alerta, desde que alguien reporta un robo hasta que suena el celular de quienes están cerca. Mi
             servicio, resaltado.

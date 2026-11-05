@@ -6,7 +6,7 @@ export const figure1 = (
   <ResponsiveFigure
     desktop={
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        <div style={{ border: '1px solid #1F1F1F', borderRadius: '20px', background: '#0D0D0D', overflow: 'hidden' }}>
+        <div style={{ border: '1px solid var(--c-1f1f1f)', borderRadius: '0', background: 'var(--c-0d0d0d)', overflow: 'hidden' }}>
           <DiagramFit width={1200} height={680}>
             <div style={{ position: 'relative', width: '1200px', height: '680px', fontSize: '12.5px', lineHeight: '16px' }}>
               <div
@@ -17,9 +17,9 @@ export const figure1 = (
                   width: '744px',
                   height: '140px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #3A3A3A',
-                  borderRadius: '14px',
-                  background: '#121212',
+                  border: '1px dashed var(--c-3a3a3a)',
+                  borderRadius: '0',
+                  background: 'var(--c-121212)',
                 }}
               ></div>
               <div
@@ -30,19 +30,23 @@ export const figure1 = (
                   width: '744px',
                   height: '420px',
                   boxSizing: 'border-box',
-                  border: '1px dashed #262626',
-                  borderRadius: '14px',
-                  background: '#0F0F0F',
+                  border: '1px dashed var(--c-262626)',
+                  borderRadius: '0',
+                  background: 'var(--c-0f0f0f)',
                 }}
               ></div>
-              <div style={{ position: 'absolute', left: '204px', top: '46px', fontSize: '12px', color: '#A1A1A1' }}>Vercel · Next.js</div>
-              <div style={{ position: 'absolute', left: '204px', top: '236px', fontSize: '12px', color: '#8F8F8F' }}>
+              <div style={{ position: 'absolute', left: '204px', top: '46px', fontSize: '12px', color: 'var(--c-a1a1a1)' }}>
+                Vercel · Next.js
+              </div>
+              <div style={{ position: 'absolute', left: '204px', top: '236px', fontSize: '12px', color: 'var(--c-8f8f8f)' }}>
                 Supabase · Postgres, Auth, Realtime, pg_cron
               </div>
-              <div style={{ position: 'absolute', left: '744px', top: '46px', fontSize: '11.5px', color: '#D9A441' }}>
+              <div style={{ position: 'absolute', left: '744px', top: '46px', fontSize: '11.5px', color: 'var(--c-d9a441)' }}>
                 webhook · firma + idempotencia
               </div>
-              <div style={{ position: 'absolute', left: '404px', top: '594px', fontSize: '11.5px', color: '#D9A441' }}>aviso de turno</div>
+              <div style={{ position: 'absolute', left: '404px', top: '594px', fontSize: '11.5px', color: 'var(--c-d9a441)' }}>
+                aviso de turno
+              </div>
               <svg
                 width="48"
                 height="8"
@@ -56,7 +60,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -82,7 +86,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -108,7 +112,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -134,7 +138,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -160,7 +164,7 @@ export const figure1 = (
                   height: '132px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -186,7 +190,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeDasharray: '2 4',
@@ -207,7 +211,7 @@ export const figure1 = (
                   height: '120px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -229,7 +233,7 @@ export const figure1 = (
                   height: '132px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -255,7 +259,7 @@ export const figure1 = (
                   height: '116px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#5A5A5A',
+                  stroke: 'var(--c-5a5a5a)',
                   strokeWidth: '1.5',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -277,7 +281,7 @@ export const figure1 = (
                   height: '108px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -304,7 +308,7 @@ export const figure1 = (
                   height: '256px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -331,7 +335,7 @@ export const figure1 = (
                   height: '224px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -357,7 +361,7 @@ export const figure1 = (
                   height: '32px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -384,7 +388,7 @@ export const figure1 = (
                   height: '298px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -405,7 +409,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -431,7 +435,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -457,7 +461,7 @@ export const figure1 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -483,15 +487,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Jugador</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>página pública</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>página pública</span>
                 </span>
               </div>
               <div
@@ -507,15 +511,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Equipo del negocio</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>panel por sede</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>panel por sede</span>
                 </span>
               </div>
               <div
@@ -531,15 +535,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Proxy</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>negocio por URL · CSP</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>negocio por URL · CSP</span>
                 </span>
               </div>
               <div
@@ -555,15 +559,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Rutas API</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>autentican y validan</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>autentican y validan</span>
                 </span>
               </div>
               <div
@@ -579,15 +583,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Servicios de dominio</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>toda la lógica de negocio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>toda la lógica de negocio</span>
                 </span>
               </div>
               <div
@@ -603,16 +607,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>RLS por sede</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>solo lectura</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>solo lectura</span>
                 </span>
               </div>
               <div
@@ -628,16 +632,16 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Funciones de dinero</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>SQL atómico, fila bloqueada</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>SQL atómico, fila bloqueada</span>
                 </span>
               </div>
               <div
@@ -653,15 +657,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '64px / 14px',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Postgres</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>49 tablas · triggers</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>49 tablas · triggers</span>
                 </span>
               </div>
               <div
@@ -677,15 +681,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Realtime</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>turnos en vivo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>turnos en vivo</span>
                 </span>
               </div>
               <div
@@ -701,15 +705,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>pg_cron</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>vence pendientes cada minuto</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>vence pendientes cada minuto</span>
                 </span>
               </div>
               <div
@@ -725,15 +729,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Mercado Pago</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>cuenta de cada negocio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>cuenta de cada negocio</span>
                 </span>
               </div>
               <div
@@ -749,15 +753,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>WhatsApp Business</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>códigos y avisos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>códigos y avisos</span>
                 </span>
               </div>
               <div
@@ -773,15 +777,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Resend</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>correo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>correo</span>
                 </span>
               </div>
               <div
@@ -797,15 +801,15 @@ export const figure1 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Sentry</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>errores</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>errores</span>
                 </span>
               </div>
             </div>
@@ -818,7 +822,7 @@ export const figure1 = (
             justifyContent: 'space-between',
             gap: '10px 24px',
             fontSize: '14px',
-            color: '#8F8F8F',
+            color: 'var(--c-8f8f8f)',
           }}
         >
           <span>
@@ -832,7 +836,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#6B6B6B', strokeWidth: '2' }}
+                style={{ fill: 'none', stroke: 'var(--c-6b6b6b)', strokeWidth: '2' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -844,7 +848,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#D9A441', strokeWidth: '2', strokeDasharray: '6 5' }}
+                style={{ fill: 'none', stroke: 'var(--c-d9a441)', strokeWidth: '2', strokeDasharray: '6 5' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -856,7 +860,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 28 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#5A5A5A', strokeWidth: '1.5', strokeDasharray: '2 4' }}
+                style={{ fill: 'none', stroke: 'var(--c-5a5a5a)', strokeWidth: '1.5', strokeDasharray: '2 4' }}
               >
                 <path d="M 0 4 L 28 4" />
               </svg>
@@ -870,9 +874,9 @@ export const figure1 = (
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div
           style={{
-            border: '1px solid #1F1F1F',
-            borderRadius: '16px',
-            background: '#0D0D0D',
+            border: '1px solid var(--c-1f1f1f)',
+            borderRadius: '0',
+            background: 'var(--c-0d0d0d)',
             padding: '12px',
             display: 'flex',
             flexDirection: 'column',
@@ -882,22 +886,22 @@ export const figure1 = (
         >
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Quién lo usa</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Quién lo usa</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -910,14 +914,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Jugador</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>página pública</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>página pública</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -930,7 +934,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Equipo del negocio</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>panel por sede</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>panel por sede</span>
                 </span>
               </div>
             </div>
@@ -941,7 +945,14 @@ export const figure1 = (
               height="30"
               viewBox="0 0 8 30"
               aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
             >
               <defs>
                 <marker id="dc-arrow-head-filled-301" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
@@ -950,26 +961,26 @@ export const figure1 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-301)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>HTTP / llamada</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>HTTP / llamada</span>
           </div>
           <div
             style={{
-              border: '1px dashed #3A3A3A',
-              borderRadius: '14px',
-              background: '#121212',
+              border: '1px dashed var(--c-3a3a3a)',
+              borderRadius: '0',
+              background: 'var(--c-121212)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#A1A1A1' }}>Vercel · Next.js</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-a1a1a1)' }}>Vercel · Next.js</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -982,14 +993,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Proxy</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>negocio por URL · CSP</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>negocio por URL · CSP</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1002,15 +1013,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Rutas API</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>autentican y validan</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>autentican y validan</span>
                 </span>
               </div>
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1023,7 +1034,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Servicios de dominio</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>toda la lógica de negocio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>toda la lógica de negocio</span>
                 </span>
               </div>
             </div>
@@ -1034,7 +1045,14 @@ export const figure1 = (
               height="30"
               viewBox="0 0 8 30"
               aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
             >
               <defs>
                 <marker id="dc-arrow-head-filled-302" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
@@ -1043,27 +1061,27 @@ export const figure1 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-302)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>RPC y lectura</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>RPC y lectura</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Supabase · Postgres, Auth, Realtime, pg_cron</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Supabase · Postgres, Auth, Realtime, pg_cron</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1076,15 +1094,15 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Funciones de dinero</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>SQL atómico, fila bloqueada</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>SQL atómico, fila bloqueada</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1097,14 +1115,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>RLS por sede</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>solo lectura</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>solo lectura</span>
                 </span>
               </div>
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#111111',
-                  border: '1px solid #2A2A2A',
+                  background: 'var(--c-111111)',
+                  border: '1px solid var(--c-2a2a2a)',
                   borderRadius: '40px / 12px',
                   minHeight: '52px',
                   boxSizing: 'border-box',
@@ -1118,14 +1136,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Postgres</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>49 tablas · triggers</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>49 tablas · triggers</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1138,14 +1156,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>pg_cron</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>vence pendientes cada minuto</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>vence pendientes cada minuto</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1158,7 +1176,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Realtime</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>turnos en vivo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>turnos en vivo</span>
                 </span>
               </div>
             </div>
@@ -1173,7 +1191,7 @@ export const figure1 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -1186,13 +1204,13 @@ export const figure1 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-303)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#D9A441' }}>aviso de turno</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-d9a441)' }}>aviso de turno</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -1203,9 +1221,9 @@ export const figure1 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1218,7 +1236,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Equipo del negocio</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>panel por sede</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>panel por sede</span>
                 </span>
               </div>
             </div>
@@ -1226,22 +1244,22 @@ export const figure1 = (
           <div style={{ height: '14px' }}></div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
               gap: '8px',
             }}
           >
-            <span style={{ fontSize: '12px', color: '#8F8F8F' }}>Servicios externos · llamados por los servicios</span>
+            <span style={{ fontSize: '12px', color: 'var(--c-8f8f8f)' }}>Servicios externos · llamados por los servicios</span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1254,14 +1272,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Mercado Pago</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>cuenta de cada negocio</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>cuenta de cada negocio</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1274,14 +1292,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>WhatsApp Business</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>códigos y avisos</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>códigos y avisos</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1294,14 +1312,14 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Resend</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>correo</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>correo</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1314,7 +1332,7 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Sentry</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>errores</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>errores</span>
                 </span>
               </div>
             </div>
@@ -1329,7 +1347,7 @@ export const figure1 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -1342,13 +1360,13 @@ export const figure1 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-304)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#D9A441' }}>webhook · firma + idempotencia</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-d9a441)' }}>webhook · firma + idempotencia</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -1359,9 +1377,9 @@ export const figure1 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1374,13 +1392,13 @@ export const figure1 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Rutas API</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>autentican y validan</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>autentican y validan</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           <span>
             Fig. 1 — Componentes por capa. Resaltado, las dos reglas que sostienen el sistema: el dinero se escribe solo en la base, y cada
             quien lee solo su sede.
@@ -1392,7 +1410,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#6B6B6B', strokeWidth: '2' }}
+                style={{ fill: 'none', stroke: 'var(--c-6b6b6b)', strokeWidth: '2' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
@@ -1404,7 +1422,7 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#D9A441', strokeWidth: '2', strokeDasharray: '6 5' }}
+                style={{ fill: 'none', stroke: 'var(--c-d9a441)', strokeWidth: '2', strokeDasharray: '6 5' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
@@ -1416,14 +1434,16 @@ export const figure1 = (
                 height="8"
                 viewBox="0 0 24 8"
                 aria-hidden="true"
-                style={{ fill: 'none', stroke: '#5A5A5A', strokeWidth: '1.5', strokeDasharray: '2 4' }}
+                style={{ fill: 'none', stroke: 'var(--c-5a5a5a)', strokeWidth: '1.5', strokeDasharray: '2 4' }}
               >
                 <path d="M 0 4 L 24 4" />
               </svg>
               acceso a datos
             </span>
           </span>
-          <span style={{ fontSize: '13px', color: '#6F6F6F' }}>Versión compacta: en pantallas grandes se ven todos los conectores.</span>
+          <span style={{ fontSize: '13px', color: 'var(--c-6f6f6f)' }}>
+            Versión compacta: en pantallas grandes se ven todos los conectores.
+          </span>
         </figcaption>
       </figure>
     }
@@ -1437,9 +1457,9 @@ export const figure2 = (
         <img
           src="/images/resva-panel.png"
           alt="Pantalla de inicio del panel de Resva"
-          style={{ display: 'block', width: '100%', height: 'auto', border: '1px solid #1F1F1F', borderRadius: '14px' }}
+          style={{ display: 'block', width: '100%', height: 'auto', border: '1px solid var(--c-1f1f1f)', borderRadius: '0' }}
         />
-        <figcaption style={{ fontSize: '14px', color: '#8F8F8F' }}>Fig. 2 — Inicio del panel de un negocio.</figcaption>
+        <figcaption style={{ fontSize: '14px', color: 'var(--c-8f8f8f)' }}>Fig. 2 — Inicio del panel de un negocio.</figcaption>
       </figure>
     }
     mobile={null}
@@ -1450,7 +1470,7 @@ export const figure3 = (
   <ResponsiveFigure
     desktop={
       <figure style={{ margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <div style={{ border: '1px solid #1F1F1F', borderRadius: '16px', background: '#0D0D0D', overflow: 'hidden' }}>
+        <div style={{ border: '1px solid var(--c-1f1f1f)', borderRadius: '0', background: 'var(--c-0d0d0d)', overflow: 'hidden' }}>
           <DiagramFit width={680} height={236}>
             <div style={{ position: 'relative', width: '680px', height: '236px', fontSize: '12.5px', lineHeight: '16px' }}>
               <svg
@@ -1466,7 +1486,7 @@ export const figure3 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -1492,7 +1512,7 @@ export const figure3 = (
                   height: '8px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#D9A441',
+                  stroke: 'var(--c-d9a441)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -1519,7 +1539,7 @@ export const figure3 = (
                   height: '56px',
                   overflow: 'visible',
                   fill: 'none',
-                  stroke: '#6B6B6B',
+                  stroke: 'var(--c-6b6b6b)',
                   strokeWidth: '2',
                   strokeLinecap: 'round',
                   strokeLinejoin: 'round',
@@ -1532,9 +1552,11 @@ export const figure3 = (
                 </defs>
                 <path d="M 4 0 L 4 52" markerEnd="url(#dc-arrow-head-filled-83)" />
               </svg>
-              <div style={{ position: 'absolute', left: '176px', top: '54px', fontSize: '11.5px', color: '#8F8F8F' }}>reserva</div>
-              <div style={{ position: 'absolute', left: '440px', top: '54px', fontSize: '11.5px', color: '#D9A441' }}>pago aprobado</div>
-              <div style={{ position: 'absolute', left: '346px', top: '126px', fontSize: '11.5px', color: '#8F8F8F' }}>
+              <div style={{ position: 'absolute', left: '176px', top: '54px', fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>reserva</div>
+              <div style={{ position: 'absolute', left: '440px', top: '54px', fontSize: '11.5px', color: 'var(--c-d9a441)' }}>
+                pago aprobado
+              </div>
+              <div style={{ position: 'absolute', left: '346px', top: '126px', fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>
                 vence sin pago · pg_cron
               </div>
               <div
@@ -1550,9 +1572,9 @@ export const figure3 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
@@ -1572,15 +1594,15 @@ export const figure3 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Pendiente de pago</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>aparta el turno 15 min</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>aparta el turno 15 min</span>
                 </span>
               </div>
               <div
@@ -1596,16 +1618,16 @@ export const figure3 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Confirmada</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>abono registrado</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>abono registrado</span>
                 </span>
               </div>
               <div
@@ -1621,21 +1643,21 @@ export const figure3 = (
                   alignItems: 'center',
                   justifyContent: 'center',
                   textAlign: 'center',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                 }}
               >
                 <span>
                   <b style={{ fontWeight: '600' }}>Cancelada</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>libera el turno, nunca se borra</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>libera el turno, nunca se borra</span>
                 </span>
               </div>
             </div>
           </DiagramFit>
         </div>
-        <figcaption style={{ fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           Fig. 3 — Ciclo de una reserva en línea. Solo el webhook confirma; solo el tiempo cancela una pendiente.
         </figcaption>
       </figure>
@@ -1644,9 +1666,9 @@ export const figure3 = (
       <figure style={{ margin: '0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div
           style={{
-            border: '1px solid #1F1F1F',
-            borderRadius: '16px',
-            background: '#0D0D0D',
+            border: '1px solid var(--c-1f1f1f)',
+            borderRadius: '0',
+            background: 'var(--c-0d0d0d)',
             padding: '12px',
             display: 'flex',
             flexDirection: 'column',
@@ -1656,9 +1678,9 @@ export const figure3 = (
         >
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -1669,9 +1691,9 @@ export const figure3 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#0A0A0A',
-                  border: '1px solid #3A3A3A',
-                  borderRadius: '10px',
+                  background: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-3a3a3a)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1693,7 +1715,14 @@ export const figure3 = (
               height="30"
               viewBox="0 0 8 30"
               aria-hidden="true"
-              style={{ flex: '0 0 8px', overflow: 'visible', fill: 'none', stroke: '#6B6B6B', strokeWidth: '2', strokeLinecap: 'round' }}
+              style={{
+                flex: '0 0 8px',
+                overflow: 'visible',
+                fill: 'none',
+                stroke: 'var(--c-6b6b6b)',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+              }}
             >
               <defs>
                 <marker id="dc-arrow-head-filled-305" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible">
@@ -1702,13 +1731,13 @@ export const figure3 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-305)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#8F8F8F' }}>reserva</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-8f8f8f)' }}>reserva</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -1719,9 +1748,9 @@ export const figure3 = (
               <div
                 style={{
                   gridColumn: '1 / -1',
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1734,7 +1763,7 @@ export const figure3 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Pendiente de pago</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>aparta el turno 15 min</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>aparta el turno 15 min</span>
                 </span>
               </div>
             </div>
@@ -1749,7 +1778,7 @@ export const figure3 = (
                 flex: '0 0 8px',
                 overflow: 'visible',
                 fill: 'none',
-                stroke: '#D9A441',
+                stroke: 'var(--c-d9a441)',
                 strokeWidth: '2',
                 strokeLinecap: 'round',
                 strokeDasharray: '6 5',
@@ -1762,13 +1791,13 @@ export const figure3 = (
               </defs>
               <path d="M 4 0 L 4 26" markerEnd="url(#dc-arrow-head-filled-306)" />
             </svg>
-            <span style={{ fontSize: '11.5px', color: '#D9A441' }}>pago aprobado → Confirmada · vence sin pago → Cancelada</span>
+            <span style={{ fontSize: '11.5px', color: 'var(--c-d9a441)' }}>pago aprobado → Confirmada · vence sin pago → Cancelada</span>
           </div>
           <div
             style={{
-              border: '1px dashed #262626',
-              borderRadius: '14px',
-              background: '#0F0F0F',
+              border: '1px dashed var(--c-262626)',
+              borderRadius: '0',
+              background: 'var(--c-0f0f0f)',
               padding: '10px',
               display: 'flex',
               flexDirection: 'column',
@@ -1778,10 +1807,10 @@ export const figure3 = (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '8px' }}>
               <div
                 style={{
-                  background: '#EDEDED',
-                  color: '#0A0A0A',
-                  border: '1px solid #FF5B2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-ededed)',
+                  color: 'var(--c-0a0a0a)',
+                  border: '1px solid var(--c-ff5b2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1794,14 +1823,14 @@ export const figure3 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Confirmada</b>
                   <br />
-                  <span style={{ color: '#4A4A4A' }}>abono registrado</span>
+                  <span style={{ color: 'var(--c-4a4a4a)' }}>abono registrado</span>
                 </span>
               </div>
               <div
                 style={{
-                  background: '#151515',
-                  border: '1px solid #2E2E2E',
-                  borderRadius: '10px',
+                  background: 'var(--c-151515)',
+                  border: '1px solid var(--c-2e2e2e)',
+                  borderRadius: '0',
                   minHeight: '52px',
                   boxSizing: 'border-box',
                   padding: '8px 10px',
@@ -1814,13 +1843,13 @@ export const figure3 = (
                 <span>
                   <b style={{ fontWeight: '600' }}>Cancelada</b>
                   <br />
-                  <span style={{ color: '#8F8F8F' }}>libera el turno, nunca se borra</span>
+                  <span style={{ color: 'var(--c-8f8f8f)' }}>libera el turno, nunca se borra</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: '#8F8F8F' }}>
+        <figcaption style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: 'var(--c-8f8f8f)' }}>
           <span>Fig. 2 — Ciclo de una reserva en línea. Solo el webhook confirma; solo el tiempo cancela una pendiente.</span>
         </figcaption>
       </figure>

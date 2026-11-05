@@ -1,8 +1,8 @@
-# Portafolio — Juan Esteban Cárdenas
+# Portafolio — Juan Huertas
 
 Sitio personal en español e inglés: inicio, tres casos de estudio (Resva, RunPath, Sentinel) y hoja de vida en PDF.
 
-**Stack:** Next.js 16 (App Router, Cache Components) · React 19 · TypeScript · CSS Modules · fuentes Geist. Sin base de datos ni APIs: todo se genera estático.
+**Stack:** Next.js 16 (App Router, Cache Components) · React 19 · TypeScript · CSS Modules · Instrument Serif + JetBrains Mono (locales, en `app/fonts`). Sin base de datos ni APIs: todo se genera estático.
 
 ## Correr
 
@@ -26,15 +26,17 @@ pnpm lint && pnpm typecheck
 
 ```
 app/[lang]/layout.tsx         <html lang>, fuentes, metadatos base
-app/[lang]/page.tsx           inicio (tarjeta de identidad, hero, experiencia, proyectos, sobre mí, contacto)
+app/[lang]/page.tsx           inicio en láminas (héroe con bonsái, trayectoria, casos, arquitectura, sobre mí, contacto)
 app/[lang]/[slug]/page.tsx    caso de estudio
-components/home/              piezas del inicio; reloj, copiar correo, foto (efecto de vidrio) y experiencia son de cliente
+components/home/              piezas del inicio; reloj, copiar correo y experiencia son de cliente
+components/watercolor-trail   el rastro de acuarela del cursor (único gesto animado de la marca)
 components/case/              plantilla del caso, estilos del contenido y figuras (escritorio / celular)
 content/home.ts               textos del inicio (es / en)
 content/ui.ts                 textos de interfaz compartidos
 content/cases/{es,en}/*.tsx   contenido de cada caso; *.figures.tsx tiene sus diagramas
 lib/                          idiomas, datos del sitio (correo, enlaces, CV), tipos
-public/images, public/cv      foto, logo de Resva, pantallazo del panel, PDFs
+public/images, public/cv      foto, pantallazo del panel de Resva, PDFs
+public/brand                  ilustración del héroe (es/en × claro/oscuro) y sello 畑
 ```
 
 ## Editar contenido
@@ -48,8 +50,12 @@ public/images, public/cv      foto, logo de Resva, pantallazo del panel, PDFs
 
 ## Diseño
 
-Tokens en `app/globals.css` (`--bg`, `--text`, `--accent: #FF5B2E`…). Puntos de quiebre: el inicio pasa a una columna
-bajo 960 px; los casos usan la versión de celular bajo 760 px. Se revisó a 390 y 1280 px.
+Marca **Juan Huertas** (bonsái, sello 畑, "Cultivo software."). Tokens en `app/globals.css`: papel, tinta, `--hanko`
+como único acento y `--wash` solo para la acuarela; tema claro (Paper) y oscuro (Sumi) según el sistema. Los grises fijos
+de los diagramas se tradujeron a `--c-xxxxxx`, que cambian con el tema. Esquinas rectas; cuadrícula de puntos de 24 px.
+El inicio pasa a una columna bajo 960 px; los casos usan la versión de celular bajo 760 px. Se revisó a 390 y 1280 px.
+
+La ilustración del héroe se genera con el script de la marca (fuera de este repo) y vive como SVG en `public/brand`.
 
 ## Publicar
 

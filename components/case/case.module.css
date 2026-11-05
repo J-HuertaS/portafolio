@@ -49,17 +49,18 @@
 }
 .title {
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(80px, 11vw, 168px);
   line-height: 0.86;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
+  font-family: var(--font-serif);
 }
 .lead {
   margin: 0;
   max-width: 780px;
   font-size: 22px;
   line-height: 1.45;
-  color: #d4d4d4;
+  color: var(--text-soft);
   text-wrap: pretty;
 }
 .productLink {
@@ -80,7 +81,7 @@
   gap: 1px;
   background: var(--line-soft);
   border: 1px solid var(--line-soft);
-  border-radius: 16px;
+  border-radius: 0;
   overflow: hidden;
 }
 .meta > div {
@@ -156,9 +157,10 @@
 }
 .h2 {
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 28px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  font-family: var(--font-serif);
 }
 .h2Spaced {
   margin-bottom: 12px;
@@ -168,19 +170,20 @@
 }
 .h2Sub {
   margin: 0 0 12px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  font-family: var(--font-serif);
 }
 .h3 {
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 19px;
 }
 .p,
 .pSpaced {
   margin: 0;
-  color: #c9c9c9;
+  color: var(--text-soft);
   text-wrap: pretty;
 }
 .pSpaced {
@@ -207,7 +210,7 @@
 .code {
   font-family: var(--font-mono);
   font-size: 14px;
-  color: #d4d4d4;
+  color: var(--text-soft);
 }
 .decision {
   display: grid;
@@ -253,7 +256,7 @@
   gap: 1px;
   background: var(--line-soft);
   border: 1px solid var(--line-soft);
-  border-radius: 16px;
+  border-radius: 0;
   overflow: hidden;
 }
 .stat {
@@ -264,10 +267,11 @@
   gap: 6px;
 }
 .statValue {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 48px;
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  font-family: var(--font-serif);
 }
 .statLabel {
   font-size: 14px;
@@ -277,7 +281,7 @@
   margin: 0;
   padding: 18px 0;
   border-top: 1px solid var(--line);
-  color: #c9c9c9;
+  color: var(--text-soft);
   text-wrap: pretty;
 }
 .last {
@@ -296,11 +300,11 @@
 .step {
   padding: 8px 14px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 0;
   background: var(--surface);
 }
 .stepArrow {
-  color: #6b6b6b;
+  color: var(--text-dim);
 }
 .quote {
   margin: 8px 0 0;
@@ -308,9 +312,10 @@
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.35;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  font-family: var(--font-serif);
 }
 
 /* --- figuras --- */
@@ -364,9 +369,10 @@
   color: var(--text-dim);
 }
 .pagerName {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 36px;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  font-family: var(--font-serif);
 }
 
 /* --- móvil --- */

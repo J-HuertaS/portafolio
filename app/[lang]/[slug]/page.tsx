@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps<'/[lang]/[slug]'>):
   if (!isLang(lang) || !isCaseSlug(slug)) return {}
   const study = getCase(lang, slug)
   return {
-    title: `${study.title} — ${lang === 'es' ? 'Caso de estudio' : 'Case study'} · Juan Esteban Cárdenas`,
+    title: `${study.title} — ${lang === 'es' ? 'Caso de estudio' : 'Case study'} · Juan Huertas`,
     description: study.lead,
     alternates: { languages: { es: caseHref('es', slug), en: caseHref('en', slug) } },
   }

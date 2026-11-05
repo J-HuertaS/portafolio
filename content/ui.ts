@@ -9,7 +9,7 @@ export const ui = {
     copyEmail: 'Copiar correo',
     copied: 'Copiado',
     downloadCv: 'Descargar hoja de vida',
-    photoAlt: 'Foto de Juan Esteban Cárdenas',
+    photoAlt: 'Foto de Juan Huertas',
     sections: 'Secciones',
   },
   en: {
@@ -19,7 +19,7 @@ export const ui = {
     copyEmail: 'Copy email',
     copied: 'Copied',
     downloadCv: 'Download résumé',
-    photoAlt: 'Photo of Juan Esteban Cárdenas',
+    photoAlt: 'Photo of Juan Huertas',
     sections: 'Sections',
   },
 } satisfies Record<Lang, Record<string, string>>
