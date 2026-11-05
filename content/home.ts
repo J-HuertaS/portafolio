@@ -73,7 +73,7 @@ export const home: Record<Lang, HomeContent> = {
     role: 'Ingeniero de Software',
     tagline: 'Cultivo software.',
     heroLead:
-      'Ingeniero de Software en Bogotá, co-fundador y CTO de TaoTek. Empiezo por el problema: lo vuelvo requisitos, diseño a partir de ellos y planteo escenarios de calidad que, al construir el sistema, se vuelven propiedades. Después lo podo y le doy tiempo para madurar, como a un bonsái.',
+      'Ingeniero de Software en Bogotá, co-fundador y CTO de TaoTek. Empiezo por entender el problema, evalúo las posibles soluciones y diseño la arquitectura antes de construir, sin perder de vista para qué existe el sistema. Después lo podo y le doy tiempo para madurar, como a un bonsái.',
     seeWork: 'Ver el trabajo',
     present: 'hoy',
     titles: {
@@ -203,7 +203,7 @@ export const home: Record<Lang, HomeContent> = {
     role: 'Software Engineer',
     tagline: 'I grow software.',
     heroLead:
-      'Software engineer in Bogotá, co-founder & CTO at TaoTek. I start from the problem: I turn it into requirements, design from them and set quality scenarios that become properties as the system is built. Then I prune it and give it time to mature, like a bonsai.',
+      'Software engineer in Bogotá, co-founder & CTO at TaoTek. I start by understanding the problem, weigh the possible solutions and design the architecture before building, without losing sight of what the system is for. Then I prune it and give it time to mature, like a bonsai.',
     seeWork: 'See the work',
     present: 'now',
     titles: {
