@@ -155,25 +155,6 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
                     </span>
                   </span>
                 </div>
-                {featured && (
-                  <div className={s.shotFrame}>
-                    <div className={s.shot}>
-                      <Image
-                        src="/images/resva-panel.png"
-                        alt={
-                          lang === 'es'
-                            ? 'Panel de Resva: inicio del propietario con reservas, cobros, ocupación del día y sus sedes'
-                            : "Resva dashboard: an owner's home with bookings, payments, today's occupancy and locations"
-                        }
-                        fill
-                        sizes="(max-width: 1360px) 100vw, 1200px"
-                      />
-                    </div>
-                    <span className={s.shotCaption}>
-                      fig. c — resva.digital · {lang === 'es' ? 'panel del propietario' : "owner's dashboard"}
-                    </span>
-                  </div>
-                )}
               </Link>
             )
           })}
@@ -250,9 +231,9 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
           <p className={s.aboutText}>{t.about}</p>
           <figure className={s.photo}>
             <div className={s.photoFrame}>
-              <Image src="/images/juan.jpg" alt={u.photoAlt} fill sizes="(max-width: 960px) 60vw, 280px" className={s.photoImg} />
+              <Image src="/images/juan-ink.png" alt={u.photoAlt} fill sizes="(max-width: 960px) 60vw, 300px" className={s.photoImg} />
             </div>
-            <figcaption>fig. f — {lang === 'es' ? 'espécimen recolectado en Bogotá' : 'specimen collected in Bogotá'}</figcaption>
+            <figcaption>fig. f — {lang === 'es' ? 'Juan, a tinta' : 'Juan, in ink'}</figcaption>
           </figure>
         </div>
         <h3 className={s.currentlyTitle}>{t.titles.currently}</h3>
