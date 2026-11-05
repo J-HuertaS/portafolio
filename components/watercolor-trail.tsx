@@ -3,14 +3,26 @@
 import { useEffect, useRef } from 'react'
 
 /**
- * El único gesto animado de la marca: el cursor deja un rastro de acuarela muy tenue.
+ * El único gesto animado de la marca: el cursor deja un rastro de acuarela.
  *
- * Se pinta en un canvas detrás del contenido. Cada movimiento se interpola en "toques" de pincel
- * suaves (gradiente radial, poca opacidad, que se acumulan como pigmento) y el lienzo se va
- * secando: cada cuadro borra un poco de lo pintado. Más rápido = trazo más delgado y claro.
- * Los toques se superponen, pero el pigmento acumulado se queda en ~10–15 %, así que no ensucia el texto.
- * Se apaga con "reducir movimiento" y en pantallas táctiles.
+ * Cada movimiento se interpola en "toques" de pincel (gradiente radial, poca opacidad). Cada toque
+ * vive ~2 s: mientras se seca se abre un poco y pierde pigmento, así que el trazo se disuelve en
+ * el papel en vez de borrarse de golpe. Se redibuja en un canvas detrás del contenido y el bucle
+ * se detiene solo cuando ya no queda pigmento. Se apaga con "reducir movimiento" y en pantallas táctiles.
  */
+interface Dab {
+  x: number
+  y: number
+  r: number
+  a: number
+  born: number
+  dx: number
+  dy: number
+}
+
+const LIFE = 2200 // ms hasta disolverse del todo
+const MAX_DABS = 900
+
 export function WatercolorTrail() {
   const ref = useRef<HTMLCanvasElement>(null)
 
@@ -23,46 +35,49 @@ export function WatercolorTrail() {
     if (!ctx) return
 
     const dark = window.matchMedia('(prefers-color-scheme: dark)')
-    let dpr = 1
     function resize() {
       if (!canvas || !ctx) return
-      dpr = Math.min(window.devicePixelRatio || 1, 2)
+      const dpr = Math.min(window.devicePixelRatio || 1, 2)
       canvas.width = Math.round(innerWidth * dpr)
       canvas.height = Math.round(innerHeight * dpr)
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
     resize()
 
-    // pigmento: azul aguada; en Sumi un poco más claro para que se vea sobre el negro
-    const pigment = () => (dark.matches ? [159, 179, 200] : [111, 135, 159])
-    const DRY = dark.matches ? 0.045 : 0.05 // cuánto se seca por cuadro
+    const dabs: Dab[] = []
     let last: { x: number; y: number; t: number } | null = null
     let raf = 0
-    let wet = 0 // cuadros que faltan para que el lienzo quede seco del todo
 
-    function dab(x: number, y: number, r: number, a: number) {
+    function draw(now: number) {
       if (!ctx) return
-      const [R, G, B] = pigment()
-      const g = ctx.createRadialGradient(x, y, 0, x, y, r)
-      g.addColorStop(0, `rgba(${R},${G},${B},${a})`)
-      g.addColorStop(0.55, `rgba(${R},${G},${B},${a * 0.55})`)
-      g.addColorStop(1, `rgba(${R},${G},${B},0)`)
-      ctx.fillStyle = g
-      ctx.beginPath()
-      ctx.arc(x, y, r, 0, Math.PI * 2)
-      ctx.fill()
-    }
-
-    function frame() {
-      if (!ctx || !canvas) return
-      ctx.save()
-      ctx.globalCompositeOperation = 'destination-out'
-      ctx.fillStyle = `rgba(0,0,0,${DRY})`
-      ctx.fillRect(0, 0, innerWidth, innerHeight)
-      ctx.restore()
-      wet -= 1
-      raf = wet > 0 ? requestAnimationFrame(frame) : 0
-      if (!raf) ctx.clearRect(0, 0, innerWidth, innerHeight)
+      ctx.clearRect(0, 0, innerWidth, innerHeight)
+      // pigmento: azul aguada; en Sumi más claro para que se lea sobre el negro
+      const [R, G, B] = dark.matches ? [159, 179, 200] : [78, 108, 142]
+      let alive = 0
+      for (const d of dabs) {
+        const t = (now - d.born) / LIFE
+        if (t >= 1) continue
+        alive++
+        // se abre al secarse y pierde pigmento con una curva suave (empieza lento, termina lento)
+        const spread = 1 + 0.9 * t
+        const fade = 1 - t * t * (3 - 2 * t)
+        const r = d.r * spread
+        const a = d.a * fade
+        const x = d.x + d.dx * t
+        const y = d.y + d.dy * t
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r)
+        g.addColorStop(0, `rgba(${R},${G},${B},${a})`)
+        g.addColorStop(0.6, `rgba(${R},${G},${B},${a * 0.6})`)
+        g.addColorStop(1, `rgba(${R},${G},${B},0)`)
+        ctx.fillStyle = g
+        ctx.beginPath()
+        ctx.arc(x, y, r, 0, Math.PI * 2)
+        ctx.fill()
+      }
+      // descarta los toques ya disueltos
+      while (dabs.length && now - dabs[0].born >= LIFE) dabs.shift()
+      raf = alive ? requestAnimationFrame(draw) : 0
+      if (!alive) ctx.clearRect(0, 0, innerWidth, innerHeight)
     }
 
     function onMove(e: PointerEvent) {
@@ -73,18 +88,25 @@ export function WatercolorTrail() {
         const dy = p.y - last.y
         const dist = Math.hypot(dx, dy)
         const speed = dist / Math.max(1, now - last.t) // px/ms
-        const r = Math.max(10, 26 - speed * 9) // rápido = más delgado
-        const a = Math.max(0.008, 0.016 - speed * 0.004) // y más claro
-        const steps = Math.max(1, Math.floor(dist / 5))
+        const r = Math.max(11, 28 - speed * 8) // rápido = más delgado
+        const a = Math.max(0.03, 0.055 - speed * 0.01) // y más claro
+        const steps = Math.max(1, Math.floor(dist / 6))
         for (let i = 1; i <= steps; i++) {
           const k = i / steps
-          const jitter = (Math.random() - 0.5) * 3
-          dab(last.x + dx * k + jitter, last.y + dy * k + jitter, r * (0.85 + Math.random() * 0.3), a)
+          dabs.push({
+            x: last.x + dx * k + (Math.random() - 0.5) * 4,
+            y: last.y + dy * k + (Math.random() - 0.5) * 4,
+            r: r * (0.8 + Math.random() * 0.4),
+            a,
+            born: now,
+            dx: (Math.random() - 0.5) * 10, // el agua lo mueve un poco al secarse
+            dy: (Math.random() - 0.5) * 10 + 3,
+          })
         }
+        if (dabs.length > MAX_DABS) dabs.splice(0, dabs.length - MAX_DABS)
       }
       last = p
-      wet = 90
-      if (!raf) raf = requestAnimationFrame(frame)
+      if (!raf) raf = requestAnimationFrame(draw)
     }
 
     window.addEventListener('pointermove', onMove, { passive: true })

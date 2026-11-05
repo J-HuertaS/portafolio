@@ -231,9 +231,9 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
           <p className={s.aboutText}>{t.about}</p>
           <figure className={s.photo}>
             <div className={s.photoFrame}>
-              <Image src="/images/juan-ink.png" alt={u.photoAlt} fill sizes="(max-width: 960px) 60vw, 300px" className={s.photoImg} />
+              <Image src="/images/juan.jpg" alt={u.photoAlt} fill sizes="(max-width: 960px) 60vw, 300px" className={s.photoImg} />
             </div>
-            <figcaption>fig. f — {lang === 'es' ? 'Juan, a tinta' : 'Juan, in ink'}</figcaption>
+            <figcaption>Juan Huertas · Bogotá</figcaption>
           </figure>
         </div>
         <h3 className={s.currentlyTitle}>{t.titles.currently}</h3>
