@@ -36,7 +36,7 @@ export interface HomeContent {
   caseFile: string
   experience: {
     tao: { org: string; role: string; years: string; description: string }
-    unal: { org: string; role: string; years: string; degree: string }
+    unal: { org: string; role: string; years: string }
     diploma: { title: string; org: string; year: string; modules: string[]; modulesLabel: string }
   }
   projects: HomeProject[]
@@ -105,9 +105,8 @@ export const home: Record<Lang, HomeContent> = {
       },
       unal: {
         org: 'Universidad Nacional de Colombia',
-        role: 'Ingeniería de Sistemas y diplomado en Arquitectura',
+        role: 'Ingeniería de Sistemas y Computación',
         years: '2022',
-        degree: 'Ingeniería de Sistemas',
       },
       diploma: {
         title: 'Diplomado en Arquitectura y Calidad de Software',
@@ -245,9 +244,8 @@ export const home: Record<Lang, HomeContent> = {
       },
       unal: {
         org: 'Universidad Nacional de Colombia',
-        role: 'Systems Engineering and an Architecture diploma',
+        role: 'Systems and Computing Engineering',
         years: '2022',
-        degree: 'Systems Engineering',
       },
       diploma: {
         title: 'Diploma in Software Architecture and Quality',

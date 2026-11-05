@@ -4,9 +4,9 @@ import { useState } from 'react'
 import type { HomeContent } from '@/content/home'
 import s from './home.module.css'
 
-type Open = 'tao' | 'unal' | null
+type Open = 'tao' | null
 
-/** Experiencia: filas que se despliegan; empieza abierta la de TaoTek. */
+/** Experiencia: TaoTek se despliega (empieza abierta); la universidad y el diplomado son filas fijas. */
 export function Experience({ t }: { t: Pick<HomeContent, 'experience' | 'present'> }) {
   const [open, setOpen] = useState<Open>('tao')
   const toggle = (key: Exclude<Open, null>) => setOpen((o) => (o === key ? null : key))
@@ -33,28 +33,17 @@ export function Experience({ t }: { t: Pick<HomeContent, 'experience' | 'present
         </p>
       )}
 
-      <button type="button" className={s.expRow} onClick={() => toggle('unal')} aria-expanded={open === 'unal'} aria-controls="exp-unal">
-        <span className={s.expHead}>
-          <span className={s.expOrg}>{unal.org}</span>
-          <span className={s.expRole}>{unal.role}</span>
-        </span>
-        <span className={s.expRight}>
-          <span className={s.expYears}>
-            {unal.years} – {t.present}
+      <div className={s.expStatic}>
+        <div className={s.expStaticHead}>
+          <span className={s.expHead}>
+            <span className={s.expOrg}>{unal.org}</span>
+            <span className={s.expRole}>{unal.role}</span>
           </span>
-          <span aria-hidden="true" className={s.expSign}>
-            {open === 'unal' ? '−' : '+'}
-          </span>
-        </span>
-      </button>
-      {open === 'unal' && (
-        <div id="exp-unal" className={s.expDetail}>
-          <span>{unal.degree}</span>
           <span className={s.expYears}>
             {unal.years} – {t.present}
           </span>
         </div>
-      )}
+      </div>
 
       <div className={s.expStatic}>
         <div className={s.expStaticHead}>
